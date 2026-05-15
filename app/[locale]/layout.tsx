@@ -10,8 +10,7 @@ import { AmbientBlobs } from "@/components/motion/ambient-blobs";
 import { SumiFilter } from "@/components/ornaments/sumi-filter";
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
-import { SakuraDrift } from "@/components/motion/sakura-drift";
-import { AnimatedFavicon } from "@/components/animated-favicon";
+import { DeferredVisuals } from "@/components/motion/deferred-visuals";
 import { OrganizationSchema } from "@/lib/seo";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -33,12 +32,11 @@ export default async function LocaleLayout({ children, params }: Props) {
     <html lang={locale} className={`${inter.variable} ${playfair.variable} ${mincho.variable}`}>
       <body className="grain relative min-h-screen bg-transparent text-sumi antialiased">
         <OrganizationSchema locale={locale} />
-        <AnimatedFavicon />
         <NextIntlClientProvider messages={messages}>
           <MotionShell>
             <AmbientBlobs />
             <SumiFilter />
-            <SakuraDrift count={6} />
+            <DeferredVisuals />
             <div className="relative z-10 flex min-h-screen flex-col">
               <Nav />
               <main className="flex-1">{children}</main>
