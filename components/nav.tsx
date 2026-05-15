@@ -22,6 +22,7 @@ export function Nav() {
             alt="akaya"
             width={1600}
             height={1600}
+            sizes="110px"
             className="h-auto w-[110px] object-contain"
           />
         </Link>

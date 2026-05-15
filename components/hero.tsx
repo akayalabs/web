@@ -63,6 +63,8 @@ export function Hero() {
               width={1600}
               height={1600}
               priority
+              fetchPriority="high"
+              sizes="(max-width: 1024px) 90vw, 640px"
               className="block h-auto w-full max-w-[640px] object-contain object-left"
             />
           </motion.div>
