@@ -13,6 +13,9 @@ import { Footer } from "@/components/footer";
 import { SakuraDrift } from "@/components/motion/sakura-drift";
 import { AnimatedFavicon } from "@/components/animated-favicon";
 import { OrganizationSchema } from "@/lib/seo";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -43,7 +46,10 @@ export default async function LocaleLayout({ children, params }: Props) {
             </div>
           </MotionShell>
         </NextIntlClientProvider>
+        <Analytics />
+        <SpeedInsights />
       </body>
+      <GoogleAnalytics gaId="G-4C9M76B6N8" />
     </html>
   );
 }
