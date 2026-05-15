@@ -11,6 +11,7 @@ import { SumiFilter } from "@/components/ornaments/sumi-filter";
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
 import { SakuraDrift } from "@/components/motion/sakura-drift";
+import { AnimatedFavicon } from "@/components/animated-favicon";
 import { OrganizationSchema } from "@/lib/seo";
 
 export function generateStaticParams() {
@@ -29,6 +30,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     <html lang={locale} className={`${inter.variable} ${playfair.variable} ${mincho.variable}`}>
       <body className="grain relative min-h-screen bg-transparent text-sumi antialiased">
         <OrganizationSchema locale={locale} />
+        <AnimatedFavicon />
         <NextIntlClientProvider messages={messages}>
           <MotionShell>
             <AmbientBlobs />
