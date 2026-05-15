@@ -14,7 +14,8 @@ import { DeferredVisuals } from "@/components/motion/deferred-visuals";
 import { OrganizationSchema } from "@/lib/seo";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleAnalytics } from "@/components/google-analytics";
+import { CookieConsent } from "@/components/cookie-consent";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -43,11 +44,12 @@ export default async function LocaleLayout({ children, params }: Props) {
               <Footer />
             </div>
           </MotionShell>
+          <CookieConsent />
         </NextIntlClientProvider>
         <Analytics />
         <SpeedInsights />
+        <GoogleAnalytics />
       </body>
-      <GoogleAnalytics gaId="G-4C9M76B6N8" />
     </html>
   );
 }
