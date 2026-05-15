@@ -5,7 +5,7 @@
     "about": "Kurumsal",
     "contact": "İletişim",
     "switch": "English",
-    "cta_primary": "İletişime geç",
+    "cta_primary": "İletişime geçin",
     "dropdown": {
       "about_label": "Hakkımızda",
       "about_desc": "Akaya Labs'i ve felsefemizi tanıyın",
@@ -81,12 +81,12 @@
     "items": {
       "single_team": { "title": "Tek ekip, tek sorumluluk", "body": "Tasarımcı, önyüz, arka uç ve mobil ayrı şirketlerde değil — aynı ekipte. İletişim kaybı yok, sorumluluk tek." },
       "ownership": { "title": "Sahiplenen ekip", "body": "Kodu yazıp ortadan kaybolmuyoruz. Ürününüze marka ortağı gibi yaklaşıyoruz; aylar sonra bile aynı kişiler dönüş yapıyor." },
-      "long_term": { "title": "Uzun vadeli destek", "body": "Teslim sonu nokta değil. Bakım, ölçeklendirme ve yeni özellikler için kanal açık kalıyor — proje bazlı ya da retainer ile." }
+      "long_term": { "title": "Uzun vadeli destek", "body": "Teslim sonu nokta değil. Bakım, ölçeklendirme ve yeni özellikler için iletişim kanalı açık kalır — proje bazlı veya sürekli hizmet anlaşması ile." }
     }
   },
   "engagement": {
     "overline": "Çalışma modeli",
-    "title": "Proje bazlı ya da retainer ile çalışıyoruz.",
+    "title": "Proje bazlı veya sürekli hizmet anlaşması ile çalışıyoruz.",
     "body": "Her yıl sınırlı sayıda iş alıyoruz. Önce bir tanışma görüşmesi yapıyor, uyum varsa kapsam ve takvim üzerine yazılı olarak hizalanıyoruz.",
     "cta": "Görüşme planla"
   },
@@ -101,8 +101,8 @@
   "closing": {
     "overline": "Birlikte çalışmak",
     "title": "Aklınızda bir proje mi var?",
-    "body": "Her yıl sınırlı sayıda iş alıp, üzerlerinde hak ettikleri zamanı geçiriyoruz. Bir SaaS, mobil ürün ya da odaklı bir kurum içi araç düşünüyorsanız, birkaç satır yazın — 1–2 iş günü içinde dönüş yaparız.",
-    "cta": "Görüşme başlat"
+    "body": "Her yıl sınırlı sayıda iş alıp üzerlerinde hak ettikleri zamanı geçiriyoruz. Bir SaaS, mobil ürün veya odaklı bir kurum içi çözüm düşünüyorsanız birkaç satır iletin; 1–2 iş günü içerisinde tarafımızdan dönüş sağlanacaktır.",
+    "cta": "İletişime geçin"
   },
   "products": {
     "title": "Ürünler",
@@ -160,7 +160,7 @@
         },
         "speed": {
           "heading": "Hızlı",
-          "body": "Yazılım sektöründe iki tipik aksama vardır: bir uçta 'iki haftada teslim' diye atılan yarım MVP'ler, diğer uçta 'altı ay sonra teslim' olarak başlayıp iki yıla yayılan kapsam genişlemeleri. Akaya Labs ikisinden de uzak durur. Söz verilen takvime sadık kalıyor, takvimde değişiklik olması durumunda sebep ve revize takvimi aynı anda iletiyoruz. Hız, bizim için çabuk teslim etmek değil — verilen sözü tutmaktır."
+          "body": "Yazılım sektöründe iki tipik aksama vardır: bir uçta 'iki haftada teslim' diye sahaya sürülen yarım ürünler, diğer uçta 'altı ay sonra teslim' olarak başlayıp iki yıla yayılan kapsam genişlemeleri. Akaya Labs ikisinden de uzak durur. Söz verilen takvime sadık kalır, takvimde değişiklik olması durumunda gerekçe ve revize takvim aynı anda iletilir. Hız, bizim için çabuk teslim etmek değil — verilen sözü tutmaktır."
         },
         "premium": {
           "heading": "Premium",
@@ -168,7 +168,7 @@
         },
         "finished": {
           "heading": "İş bitiren",
-          "body": "Birçok stüdyo, ürünü yayına alıp 30 günlük 'destek dönemi' sunar ve sonrasında müşteriyle bağını koparır. Bu model hem ürünün uzun vadeli sağlığı hem müşteri ilişkisi için sürdürülebilir değildir. Akaya Labs farklı çalışır: yayın sonrası bakım, ölçeklendirme, yeni özellik geliştirme ve hata düzeltmeleri için kanal açık kalır. Müşteri, başlangıç sözleşmesindeki bakım maddeleri veya retainer anlaşması üzerinden aynı stüdyodan, aynı geliştiriciden yanıt almaya devam eder."
+          "body": "Birçok stüdyo ürünü yayına alıp 30 günlük 'destek dönemi' sunar ve sonrasında müşteriyle bağını koparır. Bu model hem ürünün uzun vadeli sağlığı hem müşteri ilişkisi açısından sürdürülebilir değildir. Akaya Labs farklı çalışır: yayın sonrası bakım, ölçeklendirme, yeni özellik geliştirme ve hata düzeltmeleri için iletişim kanalı açık kalır. Müşteri, başlangıç sözleşmesindeki bakım maddeleri veya sürekli hizmet anlaşması çerçevesinde aynı stüdyodan, aynı geliştirici ekibinden yanıt almaya devam eder."
         },
         "discipline": {
           "heading": "Disiplinli",
@@ -180,7 +180,7 @@
     "manifesto": {
       "lede": "Disiplinli yazılım. Sözünü tutan teslim.",
       "p1": "Akaya Labs, müşterilerinin fikirlerini yayına hazır ürünlere dönüştüren bağımsız bir yazılım stüdyosudur. Arayüz tasarımından önyüze, sunucudan mobile, altyapı kurulumundan canlı destek dönemine kadar her katman aynı ekip tarafından planlanır, geliştirilir ve teslim edilir. Bu yapı, geleneksel ajans modellerindeki katmanlar arası bilgi kaybını ortadan kaldırır; müşteri her zaman tek bir muhatap bulur, sorumluluk dağılmaz.",
-      "p2": "Yazılım sektöründe iki uçtaki yaklaşıma da mesafeliyiz: 'iki haftada teslim' diye atılan yarım MVP'lere ve iki yıla yayılarak hiç teslim edilmeyen iddialı projelere. Akaya Labs için doğru hız, sözünü tuttuğun hızdır. Söz verilen takvime sadık kalıyor, gerektiğinde sebep ve revize takvimi aynı anda iletiyor, ek maliyetleri fatura kesilmeden önce müşterinin onayına sunuyoruz.",
+      "p2": "Yazılım sektöründe iki uçtaki yaklaşıma da mesafeliyiz: 'iki haftada teslim' diye sahaya sürülen yarım ürünlere ve iki yıla yayılarak hiç teslim edilmeyen iddialı projelere. Akaya Labs için doğru hız, sözün tutulduğu hızdır. Söz verilen takvime sadık kalır, gerektiğinde gerekçe ve revize takvim aynı anda iletilir, ek maliyetler fatura kesilmeden önce müşterinin onayına sunulur.",
       "p3": "Premium ürün, butik ölçek prensibimizdir. Yılda sınırlı sayıda iş alıyoruz; alınan her projenin hak ettiği zamanı, dikkati ve yayın sonrası bakımı görmesi için. Bu seçim kısa vadede gelir hattımızı sınırlasa da uzun vadede portföyümüzün kalitesini, müşterilerimizle kurulan ortaklıkların derinliğini ve teslim edilen ürünlerin uzun ömürlülüğünü doğrudan artırıyor.",
       "p4": "Dark pattern kullanan, kullanıcıyı manipüle eden tasarım örüntülerine imza atmıyoruz; kumar, bahis ve dolandırıcılığa dayanan iş modelleri için yazılım üretmiyoruz. Bu kısıtlar sözleşmeye eklenen güzel cümleler değil; ilk görüşme aşamasında açıkça konuşulan, gerekirse işin kabul edilmemesine yol açan kurumsal filtrelerdir. Disiplin ve etik, Akaya Labs için pazarlama değil — çalışma şeklinin temelidir."
     },
@@ -198,11 +198,11 @@
       "items": {
         "team": {
           "title": "Tek ekip, tek sorumluluk",
-          "body": "Klasik bir dijital ajans modelinde tasarımcı ayrı bir şirkette, önyüz başka bir freelancer'da, arka uç bir taşeronda, mobil ise üçüncü bir ekipte olabilir. Bu yapının kaçınılmaz sonucu handoff kaybıdır: her geçişte bilgi azalır, sorumluluk yayılır ve hatalar 'benim alanım değil' sınırında sahipsiz kalır. Akaya Labs bu modeli tamamen reddeder; tüm katmanlar aynı ekip tarafından geliştirilir. Tasarım dosyasındaki bir karar, koda nasıl yansıyacağını bilen biri tarafından alınır. Müşteri sorununu kime soracağını her zaman bilir."
+          "body": "Klasik bir dijital ajans modelinde tasarımcı ayrı bir şirkette, önyüz farklı bir serbest çalışanda, arka uç bir taşeronda, mobil ise üçüncü bir ekipte olabilir. Bu yapının kaçınılmaz sonucu ekipler arası bilgi kaybıdır: her geçişte bilgi azalır, sorumluluk yayılır ve hatalar 'benim alanım değil' sınırında sahipsiz kalır. Akaya Labs bu modeli tamamen reddeder; tüm katmanlar aynı ekip tarafından geliştirilir. Tasarım dosyasındaki bir karar, koda nasıl yansıyacağını bilen kişi tarafından alınır. Müşteri, sorununu kime ileteceğini her zaman bilir."
         },
         "longterm": {
           "title": "Uzun vadeli bakım",
-          "body": "Bir yazılım ürününün gerçek hayatı yayın gününde başlar; teslim sürecinde değil. Akaya Labs, teslim ettiği ürünün canlıya çıktıktan sonraki performansını, bakımını, güvenlik güncellemelerini ve ölçeklendirme ihtiyaçlarını birinci sınıf konular olarak ele alır. Hem sözleşme bazlı bakım anlaşmaları hem retainer tarzı uzun vadeli ortaklıklar mevcuttur. Yayın sonrası 'şimdi sıra başka bir müşteride' diye uzaklaşmıyoruz; çünkü teslim sonrası destek, müşteriyle uzun vadeli ortaklığın temelidir."
+          "body": "Bir yazılım ürününün gerçek hayatı yayın gününde başlar; teslim sürecinde değil. Akaya Labs, teslim ettiği ürünün canlıya çıktıktan sonraki performansını, bakımını, güvenlik güncellemelerini ve ölçeklendirme ihtiyaçlarını birinci sınıf konular olarak ele alır. Hem sözleşme bazlı bakım anlaşmaları hem sürekli hizmet niteliğindeki uzun vadeli ortaklıklar mevcuttur. Yayın sonrası 'şimdi sıra başka bir müşteride' anlayışıyla uzaklaşmıyoruz; teslim sonrası destek, müşteriyle uzun vadeli ortaklığın temelidir."
         },
         "quality": {
           "title": "Kurumsal kalite, bağımsız stüdyo",
@@ -248,7 +248,7 @@
     "field": { "name": "Adınız", "email": "E-posta", "subject": "Konu", "message": "Mesajınız" },
     "submit": "Gönder",
     "submitting": "Gönderiliyor…",
-    "success": "Mesajınız iletildi. 1–2 iş günü içinde dönüş yapacağım.",
+    "success": "Mesajınız tarafımıza ulaştı. 1–2 iş günü içerisinde sizinle iletişime geçilecektir.",
     "error_generic": "Bir hata oluştu, lütfen tekrar deneyin.",
     "error_rate_limit": "Çok fazla istek. Lütfen biraz sonra tekrar deneyin.",
     "validation": {
