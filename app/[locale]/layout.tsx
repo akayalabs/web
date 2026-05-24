@@ -30,7 +30,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${inter.variable} ${playfair.variable} ${mincho.variable}`}>
+    <html lang={locale} className={`${inter.variable} ${playfair.variable} ${mincho.variable} overflow-x-clip`}>
       <body className="grain relative min-h-screen bg-transparent text-sumi antialiased">
         <OrganizationSchema locale={locale} />
         <NextIntlClientProvider messages={messages}>

@@ -23,8 +23,11 @@ export function GoogleAnalytics() {
 
   return (
     <>
-      <Script id="ga-consent-default" strategy="beforeInteractive">
-        {`
+      <Script
+        id="ga-consent-default"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           window.gtag = gtag;
@@ -33,18 +36,23 @@ export function GoogleAnalytics() {
             ad_storage: 'denied',
             wait_for_update: 500
           });
-        `}
-      </Script>
+        `,
+        }}
+      />
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
         strategy="afterInteractive"
       />
-      <Script id="ga-init" strategy="afterInteractive">
-        {`
+      <Script
+        id="ga-init"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
           gtag('js', new Date());
           gtag('config', '${GA_ID}', { anonymize_ip: true });
-        `}
-      </Script>
+        `,
+        }}
+      />
     </>
   );
 }

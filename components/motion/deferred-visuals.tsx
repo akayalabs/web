@@ -7,16 +7,6 @@ const SakuraDrift = dynamic(
   { ssr: false, loading: () => null },
 );
 
-const AnimatedFavicon = dynamic(
-  () => import("../animated-favicon").then((m) => ({ default: m.AnimatedFavicon })),
-  { ssr: false, loading: () => null },
-);
-
 export function DeferredVisuals() {
-  return (
-    <>
-      <SakuraDrift count={6} />
-      <AnimatedFavicon />
-    </>
-  );
+  return <SakuraDrift count={6} />;
 }

@@ -48,7 +48,7 @@ export function Hero() {
         </motion.div>
 
         {/* MASTHEAD — balanced 6/6, side-by-side, vertical-center, generous gap */}
-        <div className="mt-2 grid grid-cols-12 items-center gap-10 sm:mt-4 lg:gap-20">
+        <div className="mt-2 flex flex-col gap-10 sm:mt-4 lg:grid lg:grid-cols-12 lg:items-center lg:gap-20">
           {/* Wordmark lockup (left, 6/12) */}
           <motion.div
             className="col-span-12 lg:col-span-7"
@@ -108,7 +108,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: dur.lg, delay: 0.75, ease: ease.brush }}
-          className="mt-12 grid grid-cols-12 gap-8 lg:gap-14"
+          className="mt-12 flex flex-col gap-8 md:grid md:grid-cols-12 lg:gap-14"
         >
           {/* Col 1 — Lede (5/12) */}
           <div className="col-span-12 md:col-span-7 lg:col-span-5">
