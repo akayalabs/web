@@ -69,7 +69,12 @@ export function Footer() {
 
       <div className="mx-auto flex max-w-[1800px] flex-col items-start justify-between gap-4 sm:flex-row sm:items-end">
         <div className="font-mincho text-xs">{t("copyright")}</div>
-        <div className="font-mincho text-xs uppercase tracking-[0.22em] text-brass-deep">EST. MMXXVI · RİZE, TR</div>
+        <div className="flex flex-col items-end gap-1">
+          <div className="font-mincho text-xs uppercase tracking-[0.22em] text-brass-deep">EST. MMXXVI · RİZE, TR</div>
+          <a href="https://hesaplyor.com" target="_blank" rel="noopener noreferrer" className="font-mincho text-xs text-sumi-soft/60 hover:text-sumi-soft transition-colors">
+            hesaplyor.com — ücretsiz hesaplama araçları
+          </a>
+        </div>
       </div>
     </footer>
   );
