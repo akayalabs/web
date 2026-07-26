@@ -15,6 +15,7 @@ export function Hero() {
   const t = useTranslations("hero");
   const ct = useTranslations("capabilities");
   const et = useTranslations("engagement");
+  const at = useTranslations("a11y");
 
   const mx = useMotionValue(0);
   const my = useMotionValue(0);
@@ -59,7 +60,7 @@ export function Hero() {
             <h1 className="sr-only">{t("title")}</h1>
             <Image
               src="/brand/wordmark-tech.png"
-              alt="akaya"
+              alt={at("wordmark")}
               width={1600}
               height={1600}
               priority
@@ -82,7 +83,7 @@ export function Hero() {
             >
               <Image
                 src="/brand/logo-mark.png"
-                alt=""
+                alt={at("logo_mark")}
                 fill
                 priority
                 sizes="(max-width: 1024px) 78vw, 520px"

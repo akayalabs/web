@@ -1,4 +1,12 @@
 {
+  "a11y": {
+    "logo_mark": "Akaya Labs enso logosu",
+    "wordmark": "Akaya Labs yazı logosu",
+    "signature": "Akaya Labs el yazısı imzası",
+    "menu_open": "Menüyü aç",
+    "menu_close": "Menüyü kapat",
+    "menu_label": "Mobil menü"
+  },
   "nav": {
     "home": "Ana sayfa",
     "products": "Ürünler",
@@ -117,7 +125,7 @@
     "visit": "İncele",
     "detail": "Detayı gör",
     "pulsewatch": { "name": "PulseWatch", "blurb": "Web sitesi izleme platformu — uptime, performans ve uyarı yönetimi tek panelde." },
-    "snapslim": { "name": "SnapSlim", "blurb": "iOS için fotoğraf sıkıştırma. Küçük dosyalar, aynı görünüm — her şey cihazda." },
+    "snapslim": { "name": "SnapSlim", "blurb": "iOS için dosya sıkıştırma aracı — fotoğraf, video ve PDF küçültme, ZIP arşivi oluşturma. Tüm işlem cihazda, dosyalarınız hiçbir yere gitmez." },
     "cleanlock": { "name": "CleanLock", "blurb": "macOS için klavye temizleme yardımcısı — klavyenizi silerken ekranı, tuşları ve trackpad'i geçici olarak kilitler." },
     "hesaplyor": { "name": "hesaplyor.com", "blurb": "Gündelik hesaplar için büyüyen, ücretsiz hesaplayıcı koleksiyonu." },
     "away-kingdom": { "name": "Away Kingdom", "blurb": "Dijital detoks odaklı strateji oyunu — telefonunuzdan uzak kaldığınız süre boyunca kaynak biriktirip krallığınızı büyütüyorsunuz." },

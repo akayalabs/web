@@ -47,7 +47,7 @@ export function StatsBand({ locale }: { locale: string }) {
           transition={{ duration: 0.6, delay: i * 0.08, ease: [0.16, 1, 0.3, 1] }}
           className="flex flex-col gap-2"
         >
-          <span className="font-display text-5xl text-sumi sm:text-6xl lg:text-7xl">
+          <span className="font-display text-4xl text-sumi sm:text-6xl lg:text-7xl">
             <CountUp to={s.value} suffix={s.suffix} />
           </span>
           <span className="overline">{locale === "tr" ? s.label_tr : s.label_en}</span>

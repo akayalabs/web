@@ -7,6 +7,7 @@ import { HankoStamp } from "./ornaments/hanko-stamp";
 export function Footer() {
   const t = useTranslations("footer");
   const tn = useTranslations("nav");
+  const ta = useTranslations("a11y");
   return (
     <footer className="w-full border-t border-[color-mix(in_srgb,var(--color-brass)_18%,transparent)] bg-cream-deep/40 px-6 py-20 text-sm text-sumi-soft sm:px-10 lg:px-16 xl:px-24">
       <div className="mx-auto grid max-w-[1800px] gap-14 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
@@ -19,7 +20,7 @@ export function Footer() {
           <p className="max-w-sm leading-relaxed">{t("about")}</p>
           <Image
             src="/brand/signature.png"
-            alt="Akaya Labs"
+            alt={ta("signature")}
             width={320}
             height={320}
             className="mt-2 h-auto w-[140px] opacity-90"

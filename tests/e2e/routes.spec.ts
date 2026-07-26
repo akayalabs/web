@@ -9,7 +9,8 @@ for (const locale of LOCALES) {
       const url = `/${locale}${route}`;
       const res = await page.goto(url);
       expect(res?.ok(), `expected 200 for ${url}`).toBe(true);
-      await expect(page.locator("header a", { hasText: "Akaya Labs" })).toBeVisible();
+      // The header logo link is image-only — match its accessible name, not text content.
+      await expect(page.locator("header").getByRole("link", { name: "Akaya Labs" })).toBeVisible();
       await expect(page.locator("footer")).toContainText("Akaya Labs");
     });
   }

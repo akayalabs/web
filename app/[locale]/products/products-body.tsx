@@ -53,19 +53,17 @@ export function ProductsBody() {
                   hidden: { opacity: 0, y: 24 },
                   show: { opacity: 1, y: 0, transition: { duration: dur.md, ease: ease.brush } },
                 }}
-                className="group relative flex h-full scroll-mt-32 flex-col gap-6 rounded-sm border border-[color-mix(in_srgb,var(--color-brass)_25%,transparent)] bg-cream-deep/30 p-10 transition hover:bg-cream-deep hover:shadow-[0_24px_50px_-26px_rgba(184,137,61,0.4)]"
+                className="group relative flex h-full min-w-0 scroll-mt-32 flex-col gap-6 rounded-sm border border-[color-mix(in_srgb,var(--color-brass)_25%,transparent)] bg-cream-deep/30 p-7 transition hover:bg-cream-deep hover:shadow-[0_24px_50px_-26px_rgba(184,137,61,0.4)] sm:p-10"
               >
-                <div className="flex items-start justify-between gap-4">
-                  <h2 className="font-display text-3xl text-sumi sm:text-4xl">{t(`${p.slug}.name`)}</h2>
-                  <span className="overline whitespace-nowrap">{t(`status.${p.status}`)}</span>
+                <div className="flex min-w-0 flex-col gap-2">
+                  <span className="overline">{t(`status.${p.status}`)}</span>
+                  <h2 className="font-display text-3xl break-words text-sumi sm:text-4xl">{t(`${p.slug}.name`)}</h2>
                 </div>
                 <p className="flex-1 font-mincho text-lg leading-relaxed text-sumi sm:text-xl">
                   {t(`${p.slug}.blurb`)}
                 </p>
-                <div className="flex items-center justify-between pt-4">
-                  {p.status === "client" ? (
-                    <span />
-                  ) : p.url ? (
+                <div className="flex items-center justify-between gap-4 pt-4">
+                  {p.status !== "client" && p.url ? (
                     <a
                       href={p.url}
                       target="_blank"
@@ -75,7 +73,7 @@ export function ProductsBody() {
                       {t("visit")} →
                     </a>
                   ) : (
-                    <span className="overline text-brass-deep">{t(`status.${p.status}`)}</span>
+                    <span />
                   )}
                   <HankoStamp size={24} />
                 </div>

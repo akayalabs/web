@@ -1,4 +1,12 @@
 {
+  "a11y": {
+    "logo_mark": "Akaya Labs enso logo",
+    "wordmark": "Akaya Labs wordmark",
+    "signature": "Akaya Labs handwritten signature",
+    "menu_open": "Open menu",
+    "menu_close": "Close menu",
+    "menu_label": "Mobile menu"
+  },
   "nav": {
     "home": "Home",
     "products": "Products",
@@ -117,7 +125,7 @@
     "visit": "Visit",
     "detail": "View details",
     "pulsewatch": { "name": "PulseWatch", "blurb": "Website monitoring platform — uptime, performance and alert management in one dashboard." },
-    "snapslim": { "name": "SnapSlim", "blurb": "Photo compression for iOS. Smaller files, same look — kept on-device." },
+    "snapslim": { "name": "SnapSlim", "blurb": "A file compression toolkit for iOS — shrink photos, videos and PDFs, build ZIP archives. Everything runs on-device; your files never leave the phone." },
     "cleanlock": { "name": "CleanLock", "blurb": "A keyboard-cleaning helper for macOS — temporarily locks the screen, keys and trackpad so you can wipe your keyboard safely." },
     "hesaplyor": { "name": "hesaplyor.com", "blurb": "A growing collection of free, ad-supported calculators for everyday math." },
     "away-kingdom": { "name": "Away Kingdom", "blurb": "A digital-detox strategy game — the longer you stay away from your phone, the more resources you collect to grow your kingdom." },

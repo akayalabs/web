@@ -15,21 +15,19 @@ export function ProductCard({ product }: { product: Product }) {
       <motion.article
         whileHover={{ y: -4 }}
         transition={{ type: "spring", stiffness: 220, damping: 18 }}
-        className="relative flex h-full flex-col gap-3 rounded-sm border border-transparent bg-cream-deep/40 p-7 transition hover:bg-cream-deep hover:shadow-[0_18px_40px_-22px_rgba(184,137,61,0.45)]"
+        className="relative flex h-full min-w-0 flex-col gap-3 rounded-sm border border-transparent bg-cream-deep/40 p-6 transition hover:bg-cream-deep hover:shadow-[0_18px_40px_-22px_rgba(184,137,61,0.45)] sm:p-7"
       >
         <span
           aria-hidden
-          className="absolute inset-x-7 top-0 h-px bg-[color-mix(in_srgb,var(--color-brass)_0%,transparent)] transition-all duration-500 group-hover:bg-[color-mix(in_srgb,var(--color-brass)_70%,transparent)]"
+          className="absolute inset-x-6 top-0 h-px bg-[color-mix(in_srgb,var(--color-brass)_0%,transparent)] transition-all duration-500 group-hover:bg-[color-mix(in_srgb,var(--color-brass)_70%,transparent)] sm:inset-x-7"
         />
-        <div className="flex items-baseline justify-between gap-4">
-          <div className="flex flex-col gap-1">
-            <h3 className="font-display text-2xl text-sumi">{t(`${product.slug}.name`)}</h3>
-            <span
-              aria-hidden
-              className="block h-px w-0 origin-left bg-brass transition-all duration-500 ease-out group-hover:w-16"
-            />
-          </div>
+        <div className="flex min-w-0 flex-col gap-1">
           <span className="overline">{t(`status.${product.status}`)}</span>
+          <h3 className="font-display text-2xl break-words text-sumi">{t(`${product.slug}.name`)}</h3>
+          <span
+            aria-hidden
+            className="block h-px w-0 origin-left bg-brass transition-all duration-500 ease-out group-hover:w-16"
+          />
         </div>
         <p className="flex-1 leading-relaxed text-sumi-soft">{t(`${product.slug}.blurb`)}</p>
         {isClient ? null : product.url ? (

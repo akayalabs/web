@@ -1,10 +1,12 @@
 "use client";
 
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { motion } from "motion/react";
 import { ease, dur, viewport } from "@/lib/motion-tokens";
 
 export function EnsoBrush({ size = 360, className }: { size?: number; className?: string }) {
+  const ta = useTranslations("a11y");
   return (
     <motion.div
       className={className}
@@ -16,7 +18,7 @@ export function EnsoBrush({ size = 360, className }: { size?: number; className?
     >
       <Image
         src="/brand/logo-mark.png"
-        alt=""
+        alt={ta("logo_mark")}
         width={size}
         height={size}
         priority

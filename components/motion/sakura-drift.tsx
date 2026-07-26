@@ -43,7 +43,11 @@ export function SakuraDrift({ count = 8 }: { count?: number }) {
   const seeds = useMemo(() => (active ? buildSeeds(count) : []), [active, count]);
 
   return (
-    <div aria-hidden className="pointer-events-none fixed inset-0 z-0 overflow-hidden motion-reduce:hidden">
+    <div
+      aria-hidden
+      data-testid="sakura-drift"
+      className="pointer-events-none fixed inset-0 z-0 overflow-hidden motion-reduce:hidden"
+    >
       {seeds.map((s, i) => (
         <motion.span
           key={i}

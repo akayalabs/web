@@ -1,11 +1,12 @@
 import { expect, test } from "@playwright/test";
 
-test.use({ reducedMotion: "reduce" });
+// Playwright >=1.60 moved the top-level `reducedMotion` option under `contextOptions`.
+test.use({ contextOptions: { reducedMotion: "reduce" } });
 
 test("with reduce-motion, sakura drift is hidden", async ({ page }) => {
   await page.goto("/en");
-  const drift = page.locator("div[aria-hidden].fixed.inset-0");
-  await expect(drift).toBeHidden();
+  // Scoped by test id — the ambient blob layer shares the same utility classes.
+  await expect(page.getByTestId("sakura-drift")).toBeHidden();
 });
 
 test("with reduce-motion, hero title is fully visible immediately", async ({ page }) => {
