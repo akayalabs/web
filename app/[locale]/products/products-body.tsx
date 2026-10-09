@@ -8,7 +8,7 @@ import { ScrollReveal } from "@/components/motion/scroll-reveal";
 import { WordStagger } from "@/components/motion/word-stagger";
 import { SceneCurtain } from "@/components/motion/scene-curtain";
 import { ClosingCTA } from "@/components/closing-cta";
-import { products } from "@/lib/products";
+import { products, liveProducts } from "@/lib/products";
 import { ease, stagger, viewport, dur } from "@/lib/motion-tokens";
 
 export function ProductsBody() {
@@ -24,7 +24,7 @@ export function ProductsBody() {
             className="mt-4 font-display text-5xl tracking-tight sm:text-6xl lg:text-7xl"
           />
           <ScrollReveal as="p" className="mt-6 max-w-2xl text-lg leading-relaxed text-sumi-soft">
-            {t("subtitle")}
+            {t("subtitle", { total: products.length, live: liveProducts.length })}
           </ScrollReveal>
           <ScrollReveal
             as="p"

@@ -5,14 +5,14 @@ import { motion } from "motion/react";
 import { ease, dur, stagger, viewport } from "@/lib/motion-tokens";
 
 const PARTNERS = [
-  { name: "Apple", className: "font-display tracking-tight" },
-  { name: "Microsoft", className: "font-sans font-semibold tracking-tight" },
-  { name: "Google", className: "font-sans font-medium tracking-tight" },
-  { name: "GitHub", className: "font-sans font-semibold tracking-tight" },
+  { name: "Flutter", className: "font-sans font-medium tracking-tight" },
+  { name: "Swift", className: "font-display tracking-tight" },
+  { name: ".NET", className: "font-sans font-bold tracking-tight" },
+  { name: "Next.js", className: "font-sans font-semibold tracking-tight" },
+  { name: "PostgreSQL", className: "font-sans font-medium tracking-tight" },
   { name: "Vercel", className: "font-sans font-bold tracking-tight" },
   { name: "Railway", className: "font-sans font-semibold tracking-tight" },
-  { name: "Stripe", className: "font-sans font-bold tracking-tight" },
-  { name: "Firebase", className: "font-sans font-medium tracking-tight" },
+  { name: "Sentry", className: "font-sans font-semibold tracking-tight" },
 ] as const;
 
 export function TechPartners() {

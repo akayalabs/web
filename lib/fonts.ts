@@ -1,21 +1,21 @@
 import localFont from "next/font/local";
 
 export const inter = localFont({
-  src: "../public/fonts/Inter-Variable.ttf",
+  src: "../app/fonts/Inter-Variable.woff2",
   variable: "--font-body-loaded",
   display: "swap",
   weight: "100 900",
 });
 
 export const playfair = localFont({
-  src: "../public/fonts/PlayfairDisplay-Variable.ttf",
+  src: "../app/fonts/PlayfairDisplay-Variable.woff2",
   variable: "--font-display-loaded",
   display: "swap",
   weight: "400 900",
 });
 
 export const mincho = localFont({
-  src: "../public/fonts/ShipporiMincho-Regular.ttf",
+  src: "../app/fonts/ShipporiMincho-Regular.woff2",
   variable: "--font-mincho-loaded",
   display: "swap",
   weight: "400",

@@ -51,10 +51,13 @@ export function Hero() {
         {/* MASTHEAD — balanced 6/6, side-by-side, vertical-center, generous gap */}
         <div className="mt-2 flex flex-col gap-10 sm:mt-4 lg:grid lg:grid-cols-12 lg:items-center lg:gap-20">
           {/* Wordmark lockup (left, 6/12) */}
+          {/* Wordmark sayfanın LCP öğesi: opacity/blur ile gizli başlarsa tarayıcı onu
+              JS yüklenip animasyon bitene kadar boyanmış saymıyor. İlk karede görünür,
+              yalnızca hafif yükselerek yerine oturuyor. */}
           <motion.div
             className="col-span-12 lg:col-span-7"
-            initial={{ opacity: 0, y: 28, filter: "blur(6px)" }}
-            animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            initial={{ y: 16 }}
+            animate={{ y: 0 }}
             transition={{ duration: dur.xl, ease: ease.brush, delay: 0.1 }}
           >
             <h1 className="sr-only">{t("title")}</h1>

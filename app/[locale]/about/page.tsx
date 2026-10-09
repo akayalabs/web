@@ -1,6 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
 import { useTranslations } from "next-intl";
-import { buildMetadata } from "@/lib/seo";
+import { buildMetadata, BreadcrumbSchema } from "@/lib/seo";
 import { Manifesto } from "@/components/manifesto";
 import { BrandStory } from "@/components/brand-story";
 import { Founder } from "@/components/founder";
@@ -13,13 +13,18 @@ import { ClosingCTA } from "@/components/closing-cta";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  return buildMetadata({ locale, pathname: "/about", titleKey: "about.title" });
+  return buildMetadata({ locale, pathname: "/about", titleKey: "about.title", page: "about" });
 }
 
 export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  return <AboutBody />;
+  return (
+    <>
+      <BreadcrumbSchema locale={locale} trail={[{ pathname: "/about", titleKey: "about.title" }]} />
+      <AboutBody />
+    </>
+  );
 }
 
 function AboutBody() {

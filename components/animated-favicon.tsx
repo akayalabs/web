@@ -157,7 +157,7 @@ export function AnimatedFavicon() {
     }
 
     const logoImg = new Image();
-    logoImg.src = "/brand/logo-mark.png";
+    logoImg.src = "/brand/logo-mark-128.png";
 
     let intervalId: ReturnType<typeof setInterval> | null = null;
     let cancelled = false;

@@ -16,7 +16,7 @@ import { TechPartners } from "@/components/tech-partners";
 import { buildMetadata } from "@/lib/seo";
 import { products } from "@/lib/products";
 
-const FEATURED = ["pulsewatch", "snapslim", "cleanlock"] as const;
+const FEATURED = ["coredence", "stoneye", "bytebye", "cleandev", "pulsewatch", "snapslim"] as const;
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

@@ -1,6 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
 import { useTranslations } from "next-intl";
-import { buildMetadata } from "@/lib/seo";
+import { buildMetadata, BreadcrumbSchema } from "@/lib/seo";
 import { Link } from "@/i18n/routing";
 import { WordStagger } from "@/components/motion/word-stagger";
 import { SceneCurtain } from "@/components/motion/scene-curtain";
@@ -13,13 +13,18 @@ const SECTION_KEYS = ["scale", "longevity", "partnership", "discipline"] as cons
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  return buildMetadata({ locale, pathname: "/about/vision", titleKey: "about.vision.overline" });
+  return buildMetadata({ locale, pathname: "/about/vision", titleKey: "about.vision.overline", page: "vision" });
 }
 
 export default async function VisionPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  return <VisionBody />;
+  return (
+    <>
+      <BreadcrumbSchema locale={locale} trail={[{ pathname: "/about", titleKey: "about.title" }, { pathname: "/about/vision", titleKey: "about.vision.overline" }]} />
+      <VisionBody />
+    </>
+  );
 }
 
 function VisionBody() {

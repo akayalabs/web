@@ -26,7 +26,14 @@
   "seo": {
     "default_title": "Akaya Labs — Software Studio for Web, Mobile and Custom Applications",
     "default_description": "Independent software studio. Corporate websites, mobile apps, B2B SaaS and macOS utilities — delivered end to end by one team in Rize, Türkiye.",
-    "keywords": "software studio, web development, mobile app development, SaaS development, B2B platform, macOS app, Next.js, Flutter, .NET, indie studio Türkiye"
+    "keywords": "software studio, web development, mobile app development, SaaS development, B2B platform, macOS app, Next.js, Flutter, .NET, indie studio Türkiye",
+    "pages": {
+      "products": "Products by Akaya Labs: {names}. Independently built apps for iOS, macOS and the web.",
+      "about": "Meet Akaya Labs: an independent software studio based in Rize, Türkiye — how we work and the principles we hold to.",
+      "vision": "The Akaya Labs vision: fewer, carefully made things; growing the quality of the work rather than its volume.",
+      "mission": "The Akaya Labs mission: meticulous, fast, premium delivery that gets the job finished.",
+      "contact": "Get in touch with Akaya Labs. For collaborations, licensing or project enquiries we reply within 1–2 business days."
+    }
   },
   "hero": {
     "overline": "EST. MMXXVI · INDEPENDENT",
@@ -99,8 +106,8 @@
     "cta": "Schedule a call"
   },
   "partners": {
-    "overline": "Technologies we work with",
-    "subtitle": "We build on the platforms trusted by leading brands."
+    "overline": "Technologies we build with",
+    "subtitle": "The tools we design, build and ship our products with."
   },
   "home": {
     "featured_overline": "Currently shipping",
@@ -114,7 +121,7 @@
   },
   "products": {
     "title": "Products",
-    "subtitle": "Seven products under one roof. Some are live, some are in flight, one belongs to a client.",
+    "subtitle": "{total} products under one roof, {live} of them live. Most are our own brands; one belongs to a client.",
     "intro": "Products developed by Akaya Labs for our own brands and clients. Each one designed and shipped by a single team.",
     "status": {
       "live": "Live",
@@ -127,6 +134,18 @@
     "coredence": {
       "name": "Coredence",
       "blurb": "A measured identity for developers: it distils what you have already written into rules about how you work, ties each one to its evidence and hands them to Claude Code. Runs on your own machine."
+    },
+    "stoneye": {
+      "name": "Stoneye",
+      "blurb": "A rock and mineral identifier for iOS. A photo gives you a shortlist; simple tests you run yourself narrow it down. When it is not sure, it says so instead of guessing."
+    },
+    "bytebye": {
+      "name": "Bytebye",
+      "blurb": "A photo library cleaner for iPhone — finds duplicates, burst shots, screenshots and blurry frames, and shows exactly how much space you would get back. Nothing leaves your device."
+    },
+    "cleandev": {
+      "name": "CleanDev",
+      "blurb": "A developer cleanup tool for macOS — finds what Xcode, simulators, Flutter, Node, Unity and package managers leave behind, explains what removing each item means and keeps what is still in use."
     },
     "pulsewatch": { "name": "PulseWatch", "blurb": "Website monitoring platform — uptime, performance and alert management in one dashboard." },
     "snapslim": { "name": "SnapSlim", "blurb": "A file compression toolkit for iOS — shrink photos, videos and PDFs, build ZIP archives. Everything runs on-device; your files never leave the phone." },

@@ -1,11 +1,13 @@
 import { describe, expect, it } from "vitest";
-import { products, productSlugs } from "@/lib/products";
+import { products, productSlugs, liveProducts, platformCount } from "@/lib/products";
+import en from "@/messages/en.json";
+import tr from "@/messages/tr.json";
 
 describe("product catalogue", () => {
-  it("contains the seven expected slugs in order", () => {
+  it("lists the products in display order", () => {
     expect(productSlugs).toEqual([
-      "coredence", "pulsewatch", "snapslim", "cleanlock",
-      "hesaplyor", "away-kingdom", "cevre-sikayet",
+      "coredence", "stoneye", "bytebye", "cleandev", "pulsewatch",
+      "snapslim", "cleanlock", "hesaplyor", "away-kingdom", "cevre-sikayet",
     ]);
   });
 
@@ -19,5 +21,22 @@ describe("product catalogue", () => {
     const cevre = products.find((p) => p.slug === "cevre-sikayet");
     expect(cevre?.status).toBe("client");
     expect(cevre?.url).toBeNull();
+  });
+
+  it("gives every live product a link", () => {
+    for (const p of liveProducts) expect(p.url, p.slug).toMatch(/^https:\/\//);
+  });
+
+  it("derives the platform count from the catalogue", () => {
+    expect(platformCount).toBe(new Set(products.flatMap((p) => p.platforms)).size);
+  });
+
+  it("has a name and blurb for every product in both languages", () => {
+    for (const messages of [en, tr]) {
+      const copy = messages.products as Record<string, unknown>;
+      for (const slug of productSlugs) {
+        expect(copy[slug], slug).toMatchObject({ name: expect.any(String), blurb: expect.any(String) });
+      }
+    }
   });
 });

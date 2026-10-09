@@ -2,11 +2,12 @@
 
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView, useMotionValue, useTransform, animate } from "motion/react";
+import { liveProducts, platformCount } from "@/lib/products";
 
 const STATS = [
-  { value: 6, suffix: "", label_tr: "yayında ürün", label_en: "shipped products" },
+  { value: liveProducts.length, suffix: "", label_tr: "yayında ürün", label_en: "shipped products" },
   { value: 9, suffix: "", label_tr: "destekli dil", label_en: "supported languages" },
-  { value: 4, suffix: "", label_tr: "platform", label_en: "platforms" },
+  { value: platformCount, suffix: "", label_tr: "platform", label_en: "platforms" },
   { value: 100, suffix: "%", label_tr: "tek elden", label_en: "single-team" },
 ] as const;
 

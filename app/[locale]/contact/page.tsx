@@ -1,6 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
 import { useTranslations } from "next-intl";
-import { buildMetadata } from "@/lib/seo";
+import { buildMetadata, BreadcrumbSchema } from "@/lib/seo";
 import { ContactForm } from "@/components/contact-form";
 import { BrushDivider } from "@/components/ornaments/brush-divider";
 import { HankoStamp } from "@/components/ornaments/hanko-stamp";
@@ -9,13 +9,18 @@ import { SceneCurtain } from "@/components/motion/scene-curtain";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  return buildMetadata({ locale, pathname: "/contact", titleKey: "contact.title" });
+  return buildMetadata({ locale, pathname: "/contact", titleKey: "contact.title", page: "contact" });
 }
 
 export default async function ContactPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  return <ContactBody />;
+  return (
+    <>
+      <BreadcrumbSchema locale={locale} trail={[{ pathname: "/contact", titleKey: "contact.title" }]} />
+      <ContactBody />
+    </>
+  );
 }
 
 function ContactBody() {

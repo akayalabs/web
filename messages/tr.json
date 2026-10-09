@@ -26,7 +26,14 @@
   "seo": {
     "default_title": "Akaya Labs — Web Sitesi, Mobil ve Özel Yazılım Stüdyosu",
     "default_description": "Bağımsız yazılım stüdyosu. Web sitesi yaptırma, mobil uygulama geliştirme, B2B SaaS ve macOS uygulamaları. Rize merkezli, tek elden teslim.",
-    "keywords": "yazılım stüdyosu, web sitesi yaptırma, mobil uygulama yaptırma, kurumsal web sitesi, SaaS geliştirme, B2B uygulama, macOS uygulaması, Next.js, Flutter, .NET, Rize yazılım"
+    "keywords": "yazılım stüdyosu, web sitesi yaptırma, mobil uygulama yaptırma, kurumsal web sitesi, SaaS geliştirme, B2B uygulama, macOS uygulaması, Next.js, Flutter, .NET, Rize yazılım",
+    "pages": {
+      "products": "Akaya Labs ürünleri: {names}. iOS, macOS ve web için bağımsız olarak geliştirilen uygulamalar.",
+      "about": "Akaya Labs'i tanıyın: Rize merkezli bağımsız yazılım stüdyosu, çalışma biçimimiz ve bağlı kaldığımız ilkeler.",
+      "vision": "Akaya Labs vizyonu: az ama özenli işler; sayıyı değil, işin niteliğini büyütmek.",
+      "mission": "Akaya Labs misyonu: titiz, hızlı, premium ve iş bitiren teslim.",
+      "contact": "Akaya Labs ile iletişime geçin. İş birliği, lisans veya proje talepleri için 1–2 iş günü içinde yanıt veriyoruz."
+    }
   },
   "hero": {
     "overline": "EST. MMXXVI · BAĞIMSIZ",
@@ -99,8 +106,8 @@
     "cta": "Görüşme planla"
   },
   "partners": {
-    "overline": "Çalıştığımız teknolojiler",
-    "subtitle": "Markaların güvendiği platformlar üzerinde geliştirme yapıyoruz."
+    "overline": "Kullandığımız teknolojiler",
+    "subtitle": "Ürünlerimizi bu araçlarla tasarlıyor, geliştiriyor ve yayınlıyoruz."
   },
   "home": {
     "featured_overline": "Şu an yayında",
@@ -114,7 +121,7 @@
   },
   "products": {
     "title": "Ürünler",
-    "subtitle": "Tek çatı altında yedi ürün. Bir kısmı yayında, bir kısmı yolda, biri bir müşteriye ait.",
+    "subtitle": "Tek çatı altında {total} ürün, {live} tanesi yayında. Çoğu kendi markalarımız, biri bir müşterimize ait.",
     "intro": "Akaya Labs'in markalarımız ve müşterilerimiz için geliştirdiği ürünler. Her biri tek bir ekip tarafından tasarlanıp teslim edildi.",
     "status": {
       "live": "Yayında",
@@ -127,6 +134,18 @@
     "coredence": {
       "name": "Coredence",
       "blurb": "Geliştiriciler için ölçülmüş kimlik: yazdıklarından nasıl çalıştığını anlatan kuralları damıtır, her birini kanıtına bağlar ve Claude Code'a verir. Kendi makinende çalışır."
+    },
+    "stoneye": {
+      "name": "Stoneye",
+      "blurb": "iOS için kayaç ve mineral tanıma uygulaması. Fotoğraftan bir aday listesi çıkarır, ardından sizin yapacağınız basit testlerle sonucu daraltır. Emin olmadığında tahmin yürütmek yerine bunu açıkça söyler."
+    },
+    "bytebye": {
+      "name": "Bytebye",
+      "blurb": "iPhone fotoğraf arşivi temizleyicisi — kopya fotoğrafları, seri çekimleri, ekran görüntülerini ve bulanık kareleri bulur, silmeden önce ne kadar yer açılacağını gösterir. Fotoğraflarınız cihazdan çıkmaz."
+    },
+    "cleandev": {
+      "name": "CleanDev",
+      "blurb": "macOS için geliştirici temizlik aracı — Xcode, simülatörler, Flutter, Node, Unity ve paket yöneticilerinin bıraktığı dosyaları bulur, her birini silmenin sonucunu açıklar, hâlâ kullanılanlara dokunmaz."
     },
     "pulsewatch": { "name": "PulseWatch", "blurb": "Web sitesi izleme platformu — uptime, performans ve uyarı yönetimi tek panelde." },
     "snapslim": { "name": "SnapSlim", "blurb": "iOS için dosya sıkıştırma aracı — fotoğraf, video ve PDF küçültme, ZIP arşivi oluşturma. Tüm işlem cihazda, dosyalarınız hiçbir yere gitmez." },

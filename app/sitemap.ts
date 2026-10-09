@@ -1,19 +1,21 @@
 import type { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
+import { localizedUrl } from "@/lib/seo";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://akayalabs.com";
-const PATHS = ["", "/products", "/about", "/about/vision", "/about/mission", "/contact"] as const;
+const PATHS = ["/", "/products", "/about", "/about/vision", "/about/mission", "/contact"] as const;
+
+// Ana sayfa en yüksek önceliği alır, derinleştikçe öncelik azalır.
+const priorityOf = (path: string) => (path === "/" ? 1 : Math.max(0.5, 0.9 - 0.2 * (path.split("/").length - 2)));
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const out: MetadataRoute.Sitemap = [];
-  for (const locale of routing.locales) {
-    for (const path of PATHS) {
-      out.push({
-        url: `${SITE_URL}/${locale}${path}`,
-        changeFrequency: "monthly",
-        priority: path === "" ? 1 : 0.7,
-      });
-    }
-  }
-  return out;
+  return routing.locales.flatMap((locale) =>
+    PATHS.map((path) => ({
+      url: localizedUrl(locale, path),
+      changeFrequency: "monthly" as const,
+      priority: priorityOf(path),
+      alternates: {
+        languages: Object.fromEntries(routing.locales.map((l) => [l, localizedUrl(l, path)])),
+      },
+    })),
+  );
 }

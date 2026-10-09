@@ -1,6 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
 import { useTranslations } from "next-intl";
-import { buildMetadata } from "@/lib/seo";
+import { buildMetadata, BreadcrumbSchema } from "@/lib/seo";
 import { Link } from "@/i18n/routing";
 import { WordStagger } from "@/components/motion/word-stagger";
 import { SceneCurtain } from "@/components/motion/scene-curtain";
@@ -13,13 +13,18 @@ const SECTION_KEYS = ["precision", "speed", "premium", "finished", "discipline"]
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  return buildMetadata({ locale, pathname: "/about/mission", titleKey: "about.mission.overline" });
+  return buildMetadata({ locale, pathname: "/about/mission", titleKey: "about.mission.overline", page: "mission" });
 }
 
 export default async function MissionPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  return <MissionBody />;
+  return (
+    <>
+      <BreadcrumbSchema locale={locale} trail={[{ pathname: "/about", titleKey: "about.title" }, { pathname: "/about/mission", titleKey: "about.mission.overline" }]} />
+      <MissionBody />
+    </>
+  );
 }
 
 function MissionBody() {
