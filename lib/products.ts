@@ -1,12 +1,13 @@
 export type ProductStatus = "live" | "review" | "in_dev" | "client";
 
 export type Product = {
-  slug: "pulsewatch" | "snapslim" | "cleanlock" | "hesaplyor" | "away-kingdom" | "cevre-sikayet";
+  slug: "coredence" | "pulsewatch" | "snapslim" | "cleanlock" | "hesaplyor" | "away-kingdom" | "cevre-sikayet";
   status: ProductStatus;
   url: string | null;
 };
 
 export const products: readonly Product[] = [
+  { slug: "coredence",     status: "live",   url: "https://coredence.com" },
   { slug: "pulsewatch",    status: "live",   url: "https://pulsewatch.watch" },
   { slug: "snapslim",      status: "live",   url: null },
   { slug: "cleanlock",     status: "review", url: null },

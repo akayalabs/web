@@ -114,7 +114,7 @@
   },
   "products": {
     "title": "Products",
-    "subtitle": "Six products under one roof. Some are live, some are in flight, one belongs to a client.",
+    "subtitle": "Seven products under one roof. Some are live, some are in flight, one belongs to a client.",
     "intro": "Products developed by Akaya Labs for our own brands and clients. Each one designed and shipped by a single team.",
     "status": {
       "live": "Live",
@@ -124,6 +124,10 @@
     },
     "visit": "Visit",
     "detail": "View details",
+    "coredence": {
+      "name": "Coredence",
+      "blurb": "A measured identity for developers: it distils what you have already written into rules about how you work, ties each one to its evidence and hands them to Claude Code. Runs on your own machine."
+    },
     "pulsewatch": { "name": "PulseWatch", "blurb": "Website monitoring platform — uptime, performance and alert management in one dashboard." },
     "snapslim": { "name": "SnapSlim", "blurb": "A file compression toolkit for iOS — shrink photos, videos and PDFs, build ZIP archives. Everything runs on-device; your files never leave the phone." },
     "cleanlock": { "name": "CleanLock", "blurb": "A keyboard-cleaning helper for macOS — temporarily locks the screen, keys and trackpad so you can wipe your keyboard safely." },

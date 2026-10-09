@@ -114,7 +114,7 @@
   },
   "products": {
     "title": "Ürünler",
-    "subtitle": "Tek çatı altında altı ürün. Bir kısmı yayında, bir kısmı yolda, biri bir müşteriye ait.",
+    "subtitle": "Tek çatı altında yedi ürün. Bir kısmı yayında, bir kısmı yolda, biri bir müşteriye ait.",
     "intro": "Akaya Labs'in markalarımız ve müşterilerimiz için geliştirdiği ürünler. Her biri tek bir ekip tarafından tasarlanıp teslim edildi.",
     "status": {
       "live": "Yayında",
@@ -124,6 +124,10 @@
     },
     "visit": "İncele",
     "detail": "Detayı gör",
+    "coredence": {
+      "name": "Coredence",
+      "blurb": "Geliştiriciler için ölçülmüş kimlik: yazdıklarından nasıl çalıştığını anlatan kuralları damıtır, her birini kanıtına bağlar ve Claude Code'a verir. Kendi makinende çalışır."
+    },
     "pulsewatch": { "name": "PulseWatch", "blurb": "Web sitesi izleme platformu — uptime, performans ve uyarı yönetimi tek panelde." },
     "snapslim": { "name": "SnapSlim", "blurb": "iOS için dosya sıkıştırma aracı — fotoğraf, video ve PDF küçültme, ZIP arşivi oluşturma. Tüm işlem cihazda, dosyalarınız hiçbir yere gitmez." },
     "cleanlock": { "name": "CleanLock", "blurb": "macOS için klavye temizleme yardımcısı — klavyenizi silerken ekranı, tuşları ve trackpad'i geçici olarak kilitler." },
