@@ -28,7 +28,7 @@ export function ValuesBand() {
           <span className="font-mincho text-xs uppercase tracking-[0.32em] text-brass-deep">
             {String(i + 1).padStart(2, "0")}
           </span>
-          <h3 className="font-display text-2xl leading-tight text-sumi">{t(`items.${k}.title`)}</h3>
+          <h2 className="font-display text-2xl leading-tight text-sumi">{t(`items.${k}.title`)}</h2>
           <p className="leading-relaxed text-sumi-soft">{t(`items.${k}.body`)}</p>
         </motion.div>
       ))}

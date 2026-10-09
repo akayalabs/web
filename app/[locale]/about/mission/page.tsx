@@ -32,7 +32,7 @@ function MissionBody() {
   const tn = useTranslations("nav");
   return (
     <>
-      <SceneCurtain as="section" className="px-6 py-24 sm:px-10 sm:py-32 lg:px-16 xl:px-24">
+      <SceneCurtain eager as="section" className="px-6 py-24 sm:px-10 sm:py-32 lg:px-16 xl:px-24">
         <div className="mx-auto max-w-[1800px]">
           <Link href="/about" className="overline mb-6 inline-flex items-center gap-2 text-sumi-soft hover:text-sumi">
             ← {tn("about")}
@@ -43,7 +43,7 @@ function MissionBody() {
             text={t("title")}
             className="mt-4 max-w-4xl font-display text-4xl tracking-tight sm:text-5xl lg:text-6xl"
           />
-          <ScrollReveal as="p" className="mt-8 max-w-3xl font-mincho text-2xl leading-snug text-sumi sm:text-3xl">
+          <ScrollReveal eager as="p" className="mt-8 max-w-3xl font-mincho text-2xl leading-snug text-sumi sm:text-3xl">
             {t("lede")}
           </ScrollReveal>
           <div className="my-14 flex items-center gap-6">

@@ -15,7 +15,7 @@ export function ProductsBody() {
   const t = useTranslations("products");
   return (
     <>
-      <SceneCurtain as="section" className="px-6 py-24 sm:px-10 sm:py-32 lg:px-16 xl:px-24">
+      <SceneCurtain eager as="section" className="px-6 py-24 sm:px-10 sm:py-32 lg:px-16 xl:px-24">
         <div className="mx-auto max-w-[1800px]">
           <span className="overline">{t("title")}</span>
           <WordStagger
@@ -23,10 +23,11 @@ export function ProductsBody() {
             text={t("title")}
             className="mt-4 font-display text-5xl tracking-tight sm:text-6xl lg:text-7xl"
           />
-          <ScrollReveal as="p" className="mt-6 max-w-2xl text-lg leading-relaxed text-sumi-soft">
+          <ScrollReveal eager as="p" className="mt-6 max-w-2xl text-lg leading-relaxed text-sumi-soft">
             {t("subtitle", { total: products.length, live: liveProducts.length })}
           </ScrollReveal>
           <ScrollReveal
+            eager
             as="p"
             delay={0.05}
             className="mt-6 max-w-2xl font-mincho text-lg leading-relaxed text-sumi"
