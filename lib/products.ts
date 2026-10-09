@@ -100,10 +100,10 @@ export const products: readonly Product[] = [
   },
   {
     slug: "away-kingdom",
-    status: "in_dev",
-    url: null,
-    appStoreUrl: null,
-    platforms: ["ios", "android"],
+    status: "live",
+    url: "https://awaykingdom.com",
+    appStoreUrl: appStore("away-kingdom", "6790325775"),
+    platforms: ["ios"],
     category: "GameApplication",
   },
   {
