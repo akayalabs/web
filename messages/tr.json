@@ -310,5 +310,13 @@
     "response_time": "1–2 iş günü içinde yanıt",
     "social_label": "Bağlantılar",
     "copyright": "© 2026 Akaya Labs. Tüm hakları saklıdır."
+  },
+  "not_found": {
+    "overline": "404",
+    "title": "Aradığınız sayfa burada değil",
+    "body": "Bağlantı eskimiş ya da adres yanlış yazılmış olabilir. Aşağıdaki sayfalardan devam edebilirsiniz.",
+    "home": "Ana sayfaya dön",
+    "products": "Ürünlere göz at",
+    "contact": "Bize yazın"
   }
 }

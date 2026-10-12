@@ -310,5 +310,13 @@
     "response_time": "Reply within 1–2 business days",
     "social_label": "Links",
     "copyright": "© 2026 Akaya Labs. All rights reserved."
+  },
+  "not_found": {
+    "overline": "404",
+    "title": "This page isn't here",
+    "body": "The link may be outdated or the address mistyped. You can continue from one of the pages below.",
+    "home": "Back to home",
+    "products": "Browse products",
+    "contact": "Write to us"
   }
 }

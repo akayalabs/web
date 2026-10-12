@@ -17,6 +17,7 @@ export function Nav() {
             alt={ta("logo_mark")}
             width={40}
             height={40}
+            loading="eager"
             className="h-9 w-9 shrink-0 opacity-90 transition group-hover:opacity-100 sm:h-10 sm:w-10"
           />
           <Image
@@ -24,6 +25,7 @@ export function Nav() {
             alt={ta("wordmark")}
             width={1600}
             height={1600}
+            loading="eager"
             sizes="110px"
             className="h-auto w-[92px] shrink-0 object-contain sm:w-[110px]"
           />

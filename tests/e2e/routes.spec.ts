@@ -21,3 +21,12 @@ test("locale switcher swaps language without losing path", async ({ page }) => {
   await page.getByRole("button", { name: /switch to en/i }).click();
   await expect(page).toHaveURL(/\/en\/products$/);
 });
+
+for (const [locale, title] of [["tr", "Aradığınız sayfa burada değil"], ["en", "This page isn't here"]] as const) {
+  test(`unknown ${locale} path returns a localized 404 inside the site shell`, async ({ page }) => {
+    const res = await page.goto(`/${locale}/no-such-page`);
+    expect(res?.status()).toBe(404);
+    await expect(page.getByRole("heading", { level: 1 })).toHaveText(title);
+    await expect(page.locator("header").getByRole("link", { name: "Akaya Labs" })).toBeVisible();
+  });
+}

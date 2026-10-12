@@ -15,18 +15,20 @@ export function KurumsalDropdown() {
   const t = useTranslations("nav");
   const td = useTranslations("nav.dropdown");
   const pathname = usePathname();
-  const [open, setOpen] = useState(false);
+  // Menü açıldığı rotaya bağlı tutulur; rota değişince ayrıca effect gerekmeden kendiliğinden kapanır.
+  const [openOn, setOpenOn] = useState<string | null>(null);
+  const open = openOn === pathname;
+  const setOpen = (next: boolean | ((v: boolean) => boolean)) =>
+    setOpenOn((cur) => {
+      const value = typeof next === "function" ? next(cur === pathname) : next;
+      return value ? pathname : null;
+    });
   const ref = useRef<HTMLDivElement>(null);
-
-  // Close on route change.
-  useEffect(() => {
-    setOpen(false);
-  }, [pathname]);
 
   // Close on ESC.
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
-      if (e.key === "Escape") setOpen(false);
+      if (e.key === "Escape") setOpenOn(null);
     }
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
@@ -35,7 +37,7 @@ export function KurumsalDropdown() {
   // Close on outside click.
   useEffect(() => {
     function onClick(e: MouseEvent) {
-      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpenOn(null);
     }
     if (open) window.addEventListener("mousedown", onClick);
     return () => window.removeEventListener("mousedown", onClick);

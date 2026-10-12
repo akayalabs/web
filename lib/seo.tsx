@@ -8,6 +8,8 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://akayalabs.com";
 // Open Graph locale'i dil-bölge biçiminde ister (tr → tr_TR).
 const OG_LOCALES: Record<string, string> = { tr: "tr_TR", en: "en_US" };
 
+const ORG_ID = `${SITE_URL}/#organization`;
+
 export type PageKey = "products" | "about" | "vision" | "mission" | "contact";
 
 export function localizedUrl(locale: string, pathname: string) {
@@ -59,9 +61,9 @@ export async function buildMetadata(opts: {
 }
 
 export function OrganizationSchema({ locale }: { locale: string }) {
-  const json = {
-    "@context": "https://schema.org",
+  const organization = {
     "@type": "Organization",
+    "@id": ORG_ID,
     name: "Akaya Labs",
     url: SITE_URL,
     logo: `${SITE_URL}/brand/logo-mark.png`,
@@ -72,7 +74,8 @@ export function OrganizationSchema({ locale }: { locale: string }) {
     sameAs: [
       "https://linkedin.com/company/akayalabs",
       "https://github.com/akayalabs",
-      "https://instagram.com/akayalabs",
+      "https://www.instagram.com/akayalabs",
+      "https://x.com/akayalabs",
     ],
     address: { "@type": "PostalAddress", addressLocality: "Rize", addressCountry: "TR" },
     email: "info@akayalabs.com",
@@ -85,7 +88,16 @@ export function OrganizationSchema({ locale }: { locale: string }) {
       "macOS applications",
     ],
   };
-  return <JsonLd data={json} />;
+  // Site adı Google sonuçlarında URL yerine "Akaya Labs" olarak görünsün diye WebSite ayrıca bildirilir.
+  const website = {
+    "@type": "WebSite",
+    "@id": `${SITE_URL}/#website`,
+    name: "Akaya Labs",
+    url: localizedUrl(locale, "/"),
+    inLanguage: locale,
+    publisher: { "@id": ORG_ID },
+  };
+  return <JsonLd data={{ "@context": "https://schema.org", "@graph": [organization, website] }} />;
 }
 
 function JsonLd({ data }: { data: object }) {
@@ -114,7 +126,7 @@ export async function ProductsSchema({ locale }: { locale: string }) {
         ...(p.appStoreUrl && p.appStoreUrl !== p.url ? { sameAs: [p.appStoreUrl] } : {}),
         applicationCategory: p.category,
         operatingSystem: p.platforms.map((pl) => PLATFORM_OS[pl]).join(", "),
-        author: { "@type": "Organization", name: "Akaya Labs", url: SITE_URL },
+        author: { "@type": "Organization", "@id": ORG_ID, name: "Akaya Labs", url: SITE_URL },
       },
     })),
   };

@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo } from "react";
 import { motion } from "motion/react";
 import { SakuraPetal } from "../ornaments/sakura-petal";
+import { usePrefersReducedMotion } from "./reduced-motion";
 
 type Seed = { left: number; size: number; delay: number; dur: number; sway: number };
 
@@ -32,14 +33,7 @@ function mulberry32(seed: number) {
 }
 
 export function SakuraDrift({ count = 8 }: { count?: number }) {
-  const [active, setActive] = useState(false);
-  useEffect(() => {
-    const mql = window.matchMedia("(prefers-reduced-motion: reduce)");
-    setActive(!mql.matches);
-    const handler = (e: MediaQueryListEvent) => setActive(!e.matches);
-    mql.addEventListener("change", handler);
-    return () => mql.removeEventListener("change", handler);
-  }, []);
+  const active = !usePrefersReducedMotion();
   const seeds = useMemo(() => (active ? buildSeeds(count) : []), [active, count]);
 
   return (

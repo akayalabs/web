@@ -21,7 +21,6 @@ export function EnsoBrush({ size = 360, className }: { size?: number; className?
         alt={ta("logo_mark")}
         width={size}
         height={size}
-        priority
         className="h-full w-full object-contain"
       />
     </motion.div>

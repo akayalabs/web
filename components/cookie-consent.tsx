@@ -1,7 +1,12 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState, useSyncExternalStore } from "react";
 import { useLocale } from "next-intl";
+
+const CONSENT_KEY = "cookie-consent";
+
+// Tercih yalnızca bu bileşenin düğmeleriyle değişir; dışarıdan dinlenecek bir olay yok.
+const noopSubscribe = () => () => {};
 
 const texts = {
   tr: {
@@ -28,25 +33,27 @@ declare global {
 
 export function CookieConsent() {
   const locale = useLocale();
-  const [visible, setVisible] = useState(false);
+  // Kayıtlı tercih yoksa gösterilir; sunucuda gizli başlar ki hidrasyonda zıplama olmasın.
+  const hasStoredChoice = useSyncExternalStore(
+    noopSubscribe,
+    () => localStorage.getItem(CONSENT_KEY) !== null,
+    () => true,
+  );
+  const [dismissed, setDismissed] = useState(false);
+  const visible = !hasStoredChoice && !dismissed;
   const t = texts[locale === "tr" ? "tr" : "en"];
 
-  useEffect(() => {
-    const consent = localStorage.getItem("cookie-consent");
-    if (!consent) setVisible(true);
-  }, []);
-
   const accept = () => {
-    localStorage.setItem("cookie-consent", "accepted");
-    setVisible(false);
+    localStorage.setItem(CONSENT_KEY, "accepted");
+    setDismissed(true);
     if (typeof window.gtag === "function") {
       window.gtag("consent", "update", { analytics_storage: "granted" });
     }
   };
 
   const reject = () => {
-    localStorage.setItem("cookie-consent", "rejected");
-    setVisible(false);
+    localStorage.setItem(CONSENT_KEY, "rejected");
+    setDismissed(true);
     if (typeof window.gtag === "function") {
       window.gtag("consent", "update", { analytics_storage: "denied" });
     }

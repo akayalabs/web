@@ -66,7 +66,7 @@ export function Hero() {
               alt={at("wordmark")}
               width={1600}
               height={1600}
-              priority
+              preload
               fetchPriority="high"
               sizes="(max-width: 1024px) 90vw, 640px"
               className="block h-auto w-full max-w-[640px] object-contain object-left"
@@ -88,7 +88,7 @@ export function Hero() {
                 src="/brand/logo-mark.png"
                 alt={at("logo_mark")}
                 fill
-                priority
+                loading="eager"
                 sizes="(max-width: 1024px) 78vw, 520px"
                 className="object-contain"
               />

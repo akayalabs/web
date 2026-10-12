@@ -21,8 +21,8 @@ function fd(values: Record<string, string>): FormData {
 }
 
 beforeEach(() => {
-  (sendContactEmail as any).mockClear();
-  (contactFormLimiter.check as any).mockReset().mockReturnValue(true);
+  vi.mocked(sendContactEmail).mockClear();
+  vi.mocked(contactFormLimiter.check).mockReset().mockReturnValue(true);
 });
 
 describe("submitContact", () => {
@@ -42,7 +42,7 @@ describe("submitContact", () => {
     expect(sendContactEmail).not.toHaveBeenCalled();
   });
   it("blocks when rate limit is exceeded", async () => {
-    (contactFormLimiter.check as any).mockReturnValue(false);
+    vi.mocked(contactFormLimiter.check).mockReturnValue(false);
     const out = await submitContact(initial, fd({ name: "Ahmet", email: "a@b.co", subject: "Hi", message: "ten char min", website: "" }));
     expect(out.status).toBe("error");
     if (out.status === "error") expect(out.code).toBe("rate_limit");
