@@ -77,7 +77,7 @@ export const products: readonly Product[] = [
   {
     slug: "snapslim",
     status: "live",
-    url: appStore("snapslim-file-compressor", "6760120190"),
+    url: "https://snapslim.app",
     appStoreUrl: appStore("snapslim-file-compressor", "6760120190"),
     platforms: ["ios"],
     category: "UtilitiesApplication",
@@ -115,6 +115,13 @@ export const products: readonly Product[] = [
     category: "BusinessApplication",
   },
 ] as const;
+
+// Ürün sitesinin yanında mağaza bağlantısı ayrıca gösterilir; site zaten mağaza sayfasıysa tekrar edilmez.
+export function storeLink(p: Product): { href: string; label: string } | null {
+  if (!p.appStoreUrl || p.appStoreUrl === p.url) return null;
+  const macOnly = p.platforms.includes("macos") && !p.platforms.includes("ios");
+  return { href: p.appStoreUrl, label: macOnly ? "Mac App Store" : "App Store" };
+}
 
 export const productSlugs = products.map((p) => p.slug);
 

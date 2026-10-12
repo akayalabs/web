@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { motion } from "motion/react";
 import type { Product } from "@/lib/products";
+import { StoreLink } from "./store-link";
 import { Link } from "@/i18n/routing";
 import { Tilt3D } from "./motion/tilt-3d";
 
@@ -30,25 +31,31 @@ export function ProductCard({ product }: { product: Product }) {
           />
         </div>
         <p className="flex-1 leading-relaxed text-sumi-soft">{t(`${product.slug}.blurb`)}</p>
-        {isClient ? null : product.url ? (
-          <a
-            href={product.url}
-            target="_blank"
-            rel="noreferrer"
-            className="self-start text-sm font-medium text-sumi underline decoration-brass underline-offset-4 transition group-hover:decoration-brass-deep"
-          >
-            {t("visit")}{" "}
-            <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
-          </a>
-        ) : (
-          <Link
-            href={`/products#${product.slug}`}
-            className="self-start text-sm font-medium text-sumi underline decoration-brass underline-offset-4 transition group-hover:decoration-brass-deep"
-          >
-            {t("detail")}{" "}
-            <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
-          </Link>
-        )}
+        <div className="flex flex-wrap items-center gap-x-6 gap-y-2 self-start">
+          {isClient ? null : product.url ? (
+            <a
+              href={product.url}
+              target="_blank"
+              rel="noreferrer"
+              className="self-start text-sm font-medium text-sumi underline decoration-brass underline-offset-4 transition group-hover:decoration-brass-deep"
+            >
+              {t("visit")}{" "}
+              <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
+            </a>
+          ) : (
+            <Link
+              href={`/products#${product.slug}`}
+              className="self-start text-sm font-medium text-sumi underline decoration-brass underline-offset-4 transition group-hover:decoration-brass-deep"
+            >
+              {t("detail")}{" "}
+              <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
+            </Link>
+          )}
+          <StoreLink
+            product={product}
+            className="text-sm text-sumi-soft underline decoration-brass/60 underline-offset-4 transition hover:text-sumi hover:decoration-brass-deep"
+          />
+        </div>
       </motion.article>
     </Tilt3D>
   );

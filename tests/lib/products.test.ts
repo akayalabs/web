@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { products, productSlugs, liveProducts, platformCount } from "@/lib/products";
+import { products, productSlugs, liveProducts, platformCount, storeLink } from "@/lib/products";
 import en from "@/messages/en.json";
 import tr from "@/messages/tr.json";
 
@@ -38,5 +38,20 @@ describe("product catalogue", () => {
         expect(copy[slug], slug).toMatchObject({ name: expect.any(String), blurb: expect.any(String) });
       }
     }
+  });
+});
+
+describe("storeLink", () => {
+  it("labels a macOS-only app as Mac App Store", () => {
+    const cleanlock = products.find((p) => p.slug === "cleanlock")!;
+    expect(storeLink(cleanlock)).toEqual({ href: cleanlock.appStoreUrl, label: "Mac App Store" });
+  });
+  it("labels an iOS app as App Store", () => {
+    const stoneye = products.find((p) => p.slug === "stoneye")!;
+    expect(storeLink(stoneye)?.label).toBe("App Store");
+  });
+  it("returns null when there is no store page", () => {
+    const pulsewatch = products.find((p) => p.slug === "pulsewatch")!;
+    expect(storeLink(pulsewatch)).toBeNull();
   });
 });

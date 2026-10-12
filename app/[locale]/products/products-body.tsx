@@ -9,6 +9,7 @@ import { WordStagger } from "@/components/motion/word-stagger";
 import { SceneCurtain } from "@/components/motion/scene-curtain";
 import { ClosingCTA } from "@/components/closing-cta";
 import { products, liveProducts } from "@/lib/products";
+import { StoreLink } from "@/components/store-link";
 import { ease, stagger, viewport, dur } from "@/lib/motion-tokens";
 
 export function ProductsBody() {
@@ -64,18 +65,22 @@ export function ProductsBody() {
                   {t(`${p.slug}.blurb`)}
                 </p>
                 <div className="flex items-center justify-between gap-4 pt-4">
-                  {p.status !== "client" && p.url ? (
-                    <a
-                      href={p.url}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="font-mincho text-base text-sumi underline decoration-brass underline-offset-4 hover:decoration-brass-deep"
-                    >
-                      {t("visit")} →
-                    </a>
-                  ) : (
-                    <span />
-                  )}
+                  <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+                    {p.status !== "client" && p.url ? (
+                      <a
+                        href={p.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="font-mincho text-base text-sumi underline decoration-brass underline-offset-4 hover:decoration-brass-deep"
+                      >
+                        {t("visit")} →
+                      </a>
+                    ) : null}
+                    <StoreLink
+                      product={p}
+                      className="font-mincho text-base text-sumi-soft underline decoration-brass/60 underline-offset-4 hover:text-sumi hover:decoration-brass-deep"
+                    />
+                  </div>
                   <HankoStamp size={24} />
                 </div>
               </motion.article>
