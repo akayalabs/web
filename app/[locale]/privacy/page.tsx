@@ -3,8 +3,9 @@ import { useTranslations } from "next-intl";
 import { buildMetadata, BreadcrumbSchema } from "@/lib/seo";
 import { WordStagger } from "@/components/motion/word-stagger";
 import { SceneCurtain } from "@/components/motion/scene-curtain";
+import { CookieSettingsButton } from "@/components/cookie-settings-button";
 
-const SECTIONS = ["controller", "form", "analytics", "cookies", "transfer", "rights"] as const;
+const SECTIONS = ["controller", "form", "analytics", "measurement", "cookies", "transfer", "rights"] as const;
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -38,6 +39,11 @@ function PrivacyBody() {
             <section key={k}>
               <h2 className="font-display text-2xl text-sumi">{t(`sections.${k}.heading`)}</h2>
               <p className="mt-3 leading-relaxed text-sumi-soft">{t(`sections.${k}.body`)}</p>
+              {k === "analytics" && (
+                <div className="mt-5">
+                  <CookieSettingsButton label={t("change_consent")} />
+                </div>
+              )}
             </section>
           ))}
         </div>

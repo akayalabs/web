@@ -32,7 +32,7 @@
       "vision": "Akaya Labs takes on few projects and stays small on purpose. It looks for growth in the quality of the work, not its volume.",
       "mission": "How Akaya Labs works: a written scope, the agreed date, no unapproved invoices and a channel that stays open after launch.",
       "contact": "Write to Akaya Labs about a project, a collaboration or one of the products. You will hear back within 1–2 business days.",
-      "privacy": "What personal data the Akaya Labs site processes and why, which cookies it uses and what rights you have."
+      "privacy": "What personal data the Akaya Labs site processes, for what purpose and on what legal basis, transfers abroad, cookies and your rights."
     }
   },
   "hero": {
@@ -310,7 +310,7 @@
         },
         "ownership": {
           "title": "Ownership stays with the client",
-          "body": "Everything produced — source code, design files, brand assets, user data, server and service access keys — always belongs to the client. Any copies retained on the Akaya Labs side are reference-only; if the client requests it on day one, access is handed over immediately. Should the client decide to work with another developer or studio, the handover runs cleanly, because architectural choices, third-party dependencies and any hidden configuration are documented from the outset. The Akaya Labs business model relies on clients choosing to continue the partnership, not on lock-in."
+          "body": "Once paid for, source code, design files and access keys belong to the client. User data belongs to the client from the start. If the client wants to continue with another developer, the handover runs cleanly, because architecture decisions, third-party dependencies and hidden configuration are documented from the outset. The Akaya Labs business model relies on clients choosing to continue, not on lock-in."
         }
       }
     },
@@ -377,7 +377,9 @@
       "response_label": "Response time",
       "response_value": "Within 1–2 business days",
       "social_label": "Social"
-    }
+    },
+    "privacy_notice": "The details in this form are processed to answer your request.",
+    "privacy_link": "Privacy notice"
   },
   "footer": {
     "about": "Independent software studio. Web, mobile and custom applications, end to end.",
@@ -401,33 +403,38 @@
     "contact": "Write to us"
   },
   "privacy": {
-    "title": "Privacy",
+    "title": "Privacy notice",
     "updated": "Last updated: 30 October 2026",
     "sections": {
       "controller": {
         "heading": "Data controller",
-        "body": "This site is operated for Akaya Labs by Ahmet Karaca (Rize, Türkiye). This notice is provided under Türkiye's Personal Data Protection Law No. 6698. Contact: info@akayalabs.com."
+        "body": "The data controller is Ahmet Karaca, trading as Akaya Labs (Rize, Türkiye). Contact: info@akayalabs.com. This notice is provided under Article 10 of Türkiye's Personal Data Protection Law No. 6698."
       },
       "form": {
         "heading": "Contact form",
-        "body": "When you submit the form, your name, email address, subject and message are sent by email so that a reply can be given. To prevent abuse, your IP address is processed briefly to enforce a sending limit. Messages are kept for as long as your request and any legal obligations require."
+        "body": "Data processed: your name, email address, subject, message and IP address. Purpose: to answer your request and prevent abuse of the form. Collection: electronically, when you submit the form. Legal basis: being directly related to forming a contract for project requests, and the controller's legitimate interest for other questions and abuse prevention (Article 5(2)(c) and (f)). Messages are delivered by email and kept as long as your request and legal obligations require. The IP address is held in memory for up to one hour to enforce a sending limit, and may also appear in the hosting provider's technical logs."
       },
       "analytics": {
-        "heading": "Analytics",
-        "body": "This site uses Google Analytics. Unless you consent in the cookie banner, no analytics cookies are written; cookieless, anonymous measurement signals may still reach Google. Vercel Analytics and Speed Insights also report page views and speed measurements in aggregate. You can withdraw consent by clearing your browser data."
+        "heading": "Google Analytics",
+        "body": "Loaded only if you accept in the cookie banner; if you decline or make no choice, it does not run. Data processed: online identifiers, pages visited, device and browser details. Purpose: to measure how the site is used. Collection: automatically, through cookies. Legal basis: your explicit consent (Article 5(1)). You can withdraw consent at any time with the button below, which also deletes the Analytics cookies."
       },
       "cookies": {
         "heading": "Cookies and browser storage",
-        "body": "The NEXT_LOCALE cookie remembers your language, and a cookie-consent entry in browser storage remembers your cookie choice. Analytics cookies are written only with your consent."
+        "body": "NEXT_LOCALE remembers your language and is needed for the site to work. cookie-consent stores your cookie choice in your browser. Cookies starting with _ga belong to Google Analytics and are written only with your consent."
       },
       "transfer": {
-        "heading": "Service providers",
-        "body": "Vercel and Google are used for hosting and analytics, and an email provider for form messages. These providers' servers may be located abroad."
+        "heading": "Recipients and transfers abroad",
+        "body": "Your data is passed to these service providers: Google (email and, if you consent, Analytics) and Vercel (hosting and cookieless measurement). These companies' servers are abroad; your data may be transferred abroad, notably to the United States. The Analytics transfer relies on your explicit consent. Your data is not sold or used for advertising."
       },
       "rights": {
         "heading": "Your rights",
-        "body": "Under Article 11 of the law you may ask whether your data is processed, request its correction or deletion, and object to its processing. Send requests to info@akayalabs.com."
+        "body": "Under Article 11 of the law you may learn whether and how your data is processed and who receives it, request its correction or deletion, object to its processing and claim compensation for damage. Send requests to info@akayalabs.com; they are answered within 30 days at most. If you get no answer or find it inadequate, you may complain to Türkiye's Personal Data Protection Board. If you visit from the European Union, your GDPR rights remain unaffected."
+      },
+      "measurement": {
+        "heading": "Cookieless measurement",
+        "body": "Vercel Analytics and Speed Insights report page views and speed measurements in aggregate, without cookies. Purpose: to monitor how the site works and how fast it is. Legal basis: the controller's legitimate interest (Article 5(2)(f))."
       }
-    }
+    },
+    "change_consent": "Change my cookie choice"
   }
 }

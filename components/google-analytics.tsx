@@ -1,7 +1,8 @@
 "use client";
 
 import Script from "next/script";
-import { useEffect } from "react";
+import { useSyncExternalStore } from "react";
+import { readConsent, subscribeConsent } from "@/lib/consent";
 
 const GA_ID = "G-4C9M76B6N8";
 
@@ -13,46 +14,37 @@ declare global {
   }
 }
 
+// KVKK ilke kararı 2026/347: rıza, veri işlenmeye başlamadan önce alınır. Betik onaydan önce hiç yüklenmez.
 export function GoogleAnalytics() {
-  useEffect(() => {
-    const consent = localStorage.getItem("cookie-consent");
-    if (consent === "accepted" && typeof window.gtag === "function") {
-      window.gtag("consent", "update", { analytics_storage: "granted" });
-    }
-  }, []);
+  const accepted = useSyncExternalStore(
+    subscribeConsent,
+    () => readConsent() === "accepted",
+    () => false,
+  );
+  if (!accepted) return null;
 
   return (
     <>
       <Script
-        id="ga-consent-default"
-        strategy="beforeInteractive"
+        id="ga-init"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           window.gtag = gtag;
           gtag('consent', 'default', {
-            analytics_storage: 'denied',
+            analytics_storage: 'granted',
             ad_storage: 'denied',
-            wait_for_update: 500
+            ad_user_data: 'denied',
+            ad_personalization: 'denied'
           });
-        `,
-        }}
-      />
-      <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-        strategy="lazyOnload"
-      />
-      <Script
-        id="ga-init"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
           gtag('js', new Date());
           gtag('config', '${GA_ID}', { anonymize_ip: true });
         `,
         }}
       />
+      <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
     </>
   );
 }

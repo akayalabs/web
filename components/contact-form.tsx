@@ -3,6 +3,7 @@
 import { useActionState } from "react";
 import { useFormStatus } from "react-dom";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
 import { motion } from "motion/react";
 import { submitContact, type ContactState } from "@/app/[locale]/contact/actions";
 import { dur, ease } from "@/lib/motion-tokens";
@@ -40,6 +41,10 @@ export function ContactForm() {
       {state.status === "error" && state.code === "generic" && (
         <p className="text-sm text-crimson">{t("error_generic")}</p>
       )}
+      <p className="text-xs leading-relaxed text-sumi-soft">
+        {t("privacy_notice")}{" "}
+        <Link href="/privacy" className="underline decoration-brass underline-offset-4">{t("privacy_link")}</Link>
+      </p>
       <SubmitButton />
     </form>
   );

@@ -1,66 +1,37 @@
 "use client";
 
-import { useState, useSyncExternalStore } from "react";
+import { useSyncExternalStore } from "react";
 import { useLocale } from "next-intl";
 import { Link } from "@/i18n/routing";
-
-const CONSENT_KEY = "cookie-consent";
-
-// Tercih yalnızca bu bileşenin düğmeleriyle değişir; dışarıdan dinlenecek bir olay yok.
-const noopSubscribe = () => () => {};
+import { readConsent, saveConsent, subscribeConsent } from "@/lib/consent";
 
 const texts = {
   tr: {
     message:
-      "Bu site, deneyiminizi iyileştirmek ve trafiği analiz etmek için çerezler kullanır.",
-    privacy: "Gizlilik",
+      "Siteyi nasıl kullandığınızı ölçmek için Google Analytics çerezleri kullanmak istiyoruz. Bu ölçüm verileri Google'ın yurt dışındaki sunucularına aktarılır. Kabul ederseniz bu işleme açık rıza vermiş olursunuz; reddederseniz Analytics hiç yüklenmez.",
+    privacy: "Aydınlatma metni",
     accept: "Kabul Et",
     reject: "Reddet",
   },
   en: {
     message:
-      "This site uses cookies to enhance your experience and analyze traffic.",
-    privacy: "Privacy",
+      "We would like to use Google Analytics cookies to measure how the site is used. This measurement data is transferred to Google's servers abroad. Accepting gives your explicit consent to this; if you decline, Analytics is not loaded at all.",
+    privacy: "Privacy notice",
     accept: "Accept",
     reject: "Decline",
   },
 } as const;
 
-declare global {
-  interface Window {
-    dataLayer: unknown[];
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    gtag: (...args: any[]) => void;
-  }
-}
-
 export function CookieConsent() {
   const locale = useLocale();
   // Kayıtlı tercih yoksa gösterilir; sunucuda gizli başlar ki hidrasyonda zıplama olmasın.
   const hasStoredChoice = useSyncExternalStore(
-    noopSubscribe,
-    () => localStorage.getItem(CONSENT_KEY) !== null,
+    subscribeConsent,
+    () => readConsent() !== null,
     () => true,
   );
-  const [dismissed, setDismissed] = useState(false);
-  const visible = !hasStoredChoice && !dismissed;
+  const visible = !hasStoredChoice;
   const t = texts[locale === "tr" ? "tr" : "en"];
-
-  const accept = () => {
-    localStorage.setItem(CONSENT_KEY, "accepted");
-    setDismissed(true);
-    if (typeof window.gtag === "function") {
-      window.gtag("consent", "update", { analytics_storage: "granted" });
-    }
-  };
-
-  const reject = () => {
-    localStorage.setItem(CONSENT_KEY, "rejected");
-    setDismissed(true);
-    if (typeof window.gtag === "function") {
-      window.gtag("consent", "update", { analytics_storage: "denied" });
-    }
-  };
 
   if (!visible) return null;
 
@@ -73,13 +44,13 @@ export function CookieConsent() {
         </p>
         <div className="flex gap-2">
           <button
-            onClick={reject}
+            onClick={() => saveConsent("rejected")}
             className="rounded-sm border border-sumi/20 min-h-11 px-4 py-2 text-sm text-sumi/70 transition hover:bg-sumi/5"
           >
             {t.reject}
           </button>
           <button
-            onClick={accept}
+            onClick={() => saveConsent("accepted")}
             className="rounded-sm bg-crimson min-h-11 px-5 py-2 text-sm font-medium text-cream transition hover:bg-[color-mix(in_srgb,var(--color-crimson)_82%,#000)]"
           >
             {t.accept}

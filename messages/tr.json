@@ -32,7 +32,7 @@
       "vision": "Akaya Labs yılda az iş alır ve küçük kalmayı seçer. Büyüme, işin sayısında değil niteliğinde aranır.",
       "mission": "Akaya Labs'in çalışma sözü: yazılı kapsam, söz verilen tarih, onaysız fatura yok ve yayından sonra açık kalan bir kanal.",
       "contact": "Proje, iş birliği veya ürünlerle ilgili sorular için Akaya Labs'e yazın. Yanıt 1–2 iş günü içinde gelir.",
-      "privacy": "Akaya Labs'in sitede hangi kişisel verileri neden işlediği, hangi çerezleri kullandığı ve KVKK kapsamındaki haklarınız."
+      "privacy": "Akaya Labs sitesinde hangi kişisel verilerin hangi amaç ve hukuki sebeple işlendiği, yurt dışı aktarım, çerezler ve KVKK kapsamındaki haklarınız."
     }
   },
   "hero": {
@@ -310,7 +310,7 @@
         },
         "ownership": {
           "title": "Sahiplik müşteride",
-          "body": "Üretilen her şey — kaynak kodu, tasarım dosyaları, marka asset'leri, kullanıcı verisi, sunucu ve servis erişim anahtarları — her zaman müşteriye aittir. Akaya Labs tarafında saklanan kopyalar yalnızca referans amaçlıdır; müşteri ilk gün talep ederse erişim derhal devredilir. Müşterinin başka bir geliştirici veya stüdyo ile çalışmaya karar vermesi halinde devir süreci sorunsuz işler; çünkü mimari kararlar, üçüncü parti bağımlılıklar ve gizli yapılandırmalar baştan itibaren belgelenir. Akaya Labs'in iş modeli, müşterinin bağımlı kalmasına değil, gönüllü olarak ortaklığı sürdürmesine dayanır."
+          "body": "Ödemesi tamamlanan işin kaynak kodu, tasarım dosyaları ve erişim anahtarları müşteriye aittir. Kullanıcı verisi baştan beri müşterinindir. Başka bir geliştiriciyle devam etmek istenirse devir sorunsuz işler; çünkü mimari kararlar, üçüncü parti bağımlılıklar ve gizli yapılandırmalar baştan itibaren belgelenir. Akaya Labs'in iş modeli, müşterinin bağımlı kalmasına değil, gönüllü olarak devam etmesine dayanır."
         }
       }
     },
@@ -377,7 +377,9 @@
       "response_label": "Yanıt süresi",
       "response_value": "1–2 iş günü içinde",
       "social_label": "Sosyal medya"
-    }
+    },
+    "privacy_notice": "Bu formdaki bilgiler talebinizi yanıtlamak için işlenir.",
+    "privacy_link": "Aydınlatma metni"
   },
   "footer": {
     "about": "Bağımsız yazılım stüdyosu. Web, mobil ve özel uygulamalar — tek elden, baştan sona.",
@@ -401,33 +403,38 @@
     "contact": "Bize yazın"
   },
   "privacy": {
-    "title": "Gizlilik",
+    "title": "Gizlilik ve aydınlatma metni",
     "updated": "Son güncelleme: 30 Ekim 2026",
     "sections": {
       "controller": {
         "heading": "Veri sorumlusu",
-        "body": "Bu site Akaya Labs adına Ahmet Karaca tarafından işletilir (Rize, Türkiye). Bu metin, 6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında bilgilendirme amacı taşır. İletişim: info@akayalabs.com."
+        "body": "Veri sorumlusu, Akaya Labs adıyla çalışan Ahmet Karaca'dır (Rize, Türkiye). İletişim: info@akayalabs.com. Bu metin, 6698 sayılı Kişisel Verilerin Korunması Kanunu'nun 10'uncu maddesi kapsamında sizi bilgilendirmek için hazırlanmıştır."
       },
       "form": {
         "heading": "İletişim formu",
-        "body": "Formu gönderdiğinizde adınız, e-posta adresiniz, konu ve mesajınız size yanıt vermek için e-posta olarak iletilir. Kötüye kullanımı önlemek için IP adresiniz, gönderim sınırını uygulamak amacıyla kısa süreli işlenir. Mesajlar, talebiniz ve olası yasal yükümlülükler için gerektiği kadar saklanır."
+        "body": "İşlenen veriler: adınız, e-posta adresiniz, konu, mesajınız ve IP adresiniz. Amaç: talebinizi yanıtlamak ve formun kötüye kullanılmasını önlemek. Toplama yöntemi: formu göndermenizle elektronik olarak. Hukuki sebep: proje talepleri için sözleşmenin kurulmasıyla doğrudan ilgili olması, diğer sorular ve kötüye kullanımın önlenmesi için veri sorumlusunun meşru menfaati (Kanun'un 5'inci maddesinin ikinci fıkrası, c ve f bentleri). Mesajlar e-posta olarak iletilir ve talebiniz ile yasal yükümlülükler için gereken süre kadar saklanır. IP adresi gönderim sınırı için en fazla bir saat bellekte tutulur; barındırma sağlayıcısının teknik kayıtlarında da görünebilir."
       },
       "analytics": {
-        "heading": "Analitik",
-        "body": "Site Google Analytics kullanır. Çerez bandında onay vermediğiniz sürece analitik çerezleri yazılmaz; bu durumda Google'a çerezsiz ve kimliksiz ölçüm sinyalleri gidebilir. Ayrıca Vercel Analytics ve Speed Insights, sayfa görüntüleme ve hız ölçümlerini toplu olarak raporlar. Onayınızı tarayıcı verilerinizi temizleyerek geri alabilirsiniz."
+        "heading": "Google Analytics",
+        "body": "Yalnızca çerez bandında kabul ederseniz yüklenir; reddederseniz ya da seçim yapmazsanız hiç çalışmaz. İşlenen veriler: çevrimiçi tanımlayıcılar, ziyaret edilen sayfalar, cihaz ve tarayıcı bilgisi. Amaç: sitenin nasıl kullanıldığını ölçmek. Toplama yöntemi: çerezlerle otomatik olarak. Hukuki sebep: açık rızanız (Kanun'un 5'inci maddesinin birinci fıkrası). Rızanızı istediğiniz zaman aşağıdaki düğmeyle geri alabilirsiniz; bu durumda Analytics çerezleri silinir."
       },
       "cookies": {
-        "heading": "Çerezler ve tarayıcı depolaması",
-        "body": "NEXT_LOCALE çerezi dil tercihinizi, tarayıcıda saklanan cookie-consent kaydı çerez tercihinizi hatırlar. Analitik çerezler yalnızca onayınızla yazılır."
+        "heading": "Çerezler ve tarayıcı kayıtları",
+        "body": "NEXT_LOCALE: dil tercihinizi hatırlar, sitenin çalışması için gereklidir. cookie-consent: çerez seçiminizi tarayıcınızda saklar. _ga ile başlayan çerezler: Google Analytics'e aittir ve yalnızca onayınızla yazılır."
       },
       "transfer": {
-        "heading": "Hizmet sağlayıcılar",
-        "body": "Barındırma ve analitik için Vercel ve Google, form iletileri için e-posta sağlayıcısı kullanılır. Bu sağlayıcıların sunucuları yurt dışında bulunabilir."
+        "heading": "Aktarım ve yurt dışı",
+        "body": "Verileriniz şu hizmet sağlayıcılara aktarılır: Google (e-posta ve onay verirseniz Analytics) ve Vercel (barındırma ve çerezsiz ölçüm). Bu şirketlerin sunucuları yurt dışındadır; verileriniz başta ABD olmak üzere yurt dışına aktarılabilir. Analytics için yapılan aktarım açık rızanıza dayanır. Verileriniz satılmaz ve reklam için kullanılmaz."
       },
       "rights": {
         "heading": "Haklarınız",
-        "body": "KVKK'nın 11. maddesi uyarınca verilerinizin işlenip işlenmediğini öğrenme, düzeltilmesini veya silinmesini isteme ve işlemeye itiraz etme haklarına sahipsiniz. Başvurularınızı info@akayalabs.com adresine iletebilirsiniz."
+        "body": "Kanun'un 11'inci maddesi kapsamında verilerinizin işlenip işlenmediğini ve nasıl kullanıldığını öğrenebilir, aktarıldığı kişileri bilebilir, düzeltilmesini veya silinmesini isteyebilir, işlemeye itiraz edebilir ve zararınızın giderilmesini talep edebilirsiniz. Başvurularınızı info@akayalabs.com adresine iletebilirsiniz; en geç 30 gün içinde yanıtlanır. Yanıt alamazsanız ya da yanıtı yeterli bulmazsanız Kişisel Verileri Koruma Kurulu'na şikâyette bulunabilirsiniz. Avrupa Birliği'nden ziyaret ediyorsanız GDPR kapsamındaki haklarınız saklıdır."
+      },
+      "measurement": {
+        "heading": "Çerezsiz ölçüm",
+        "body": "Vercel Analytics ve Speed Insights, sayfa görüntüleme ve hız ölçümlerini çerez kullanmadan toplu olarak raporlar. Amaç: sitenin çalışmasını ve hızını izlemek. Hukuki sebep: veri sorumlusunun meşru menfaati (Kanun'un 5'inci maddesinin ikinci fıkrası, f bendi)."
       }
-    }
+    },
+    "change_consent": "Çerez tercihimi değiştir"
   }
 }
