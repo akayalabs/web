@@ -14,6 +14,11 @@ const SECURITY_HEADERS = [
 const nextConfig: NextConfig = {
   reactCompiler: false,
   poweredByHeader: false,
+  // En geniş görsel 640 px'lik yuvada; 3 kat piksel yoğunluğunu 1600 karşılıyor, 3840 boşuna indiriliyordu.
+  images: {
+    formats: ["image/avif", "image/webp"],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1600],
+  },
   async headers() {
     return [{ source: "/:path*", headers: SECURITY_HEADERS }];
   },

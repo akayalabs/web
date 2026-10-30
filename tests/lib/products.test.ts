@@ -6,8 +6,8 @@ import tr from "@/messages/tr.json";
 describe("product catalogue", () => {
   it("lists the products in display order", () => {
     expect(productSlugs).toEqual([
-      "coredence", "stoneye", "bytebye", "cleandev", "pulsewatch",
-      "snapslim", "cleanlock", "hesaplyor", "away-kingdom", "cevre-sikayet",
+      "coredence", "stoneye", "bytebye", "cleandev", "patchkit", "pulsewatch",
+      "snapslim", "cleanlock", "hesaplyor", "away-kingdom", "kinetude", "cevre-sikayet",
     ]);
   });
 
@@ -46,12 +46,18 @@ describe("storeLink", () => {
     const cleanlock = products.find((p) => p.slug === "cleanlock")!;
     expect(storeLink(cleanlock)).toEqual({ href: cleanlock.appStoreUrl, label: "Mac App Store" });
   });
+  it("links the iOS apps of web products", () => {
+    for (const slug of ["patchkit", "pulsewatch"]) {
+      const product = products.find((p) => p.slug === slug)!;
+      expect(storeLink(product)?.label, slug).toBe("App Store");
+    }
+  });
   it("labels an iOS app as App Store", () => {
     const stoneye = products.find((p) => p.slug === "stoneye")!;
     expect(storeLink(stoneye)?.label).toBe("App Store");
   });
   it("returns null when there is no store page", () => {
-    const pulsewatch = products.find((p) => p.slug === "pulsewatch")!;
-    expect(storeLink(pulsewatch)).toBeNull();
+    const coredence = products.find((p) => p.slug === "coredence")!;
+    expect(storeLink(coredence)).toBeNull();
   });
 });

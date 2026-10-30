@@ -8,7 +8,7 @@ import { ScrollReveal } from "@/components/motion/scroll-reveal";
 import { WordStagger } from "@/components/motion/word-stagger";
 import { SceneCurtain } from "@/components/motion/scene-curtain";
 import { ClosingCTA } from "@/components/closing-cta";
-import { products, liveProducts } from "@/lib/products";
+import { products, liveProducts, PLATFORM_LABEL } from "@/lib/products";
 import { StoreLink } from "@/components/store-link";
 import { ease, stagger, viewport, dur } from "@/lib/motion-tokens";
 
@@ -58,7 +58,9 @@ export function ProductsBody() {
                 className="group relative flex h-full min-w-0 scroll-mt-32 flex-col gap-6 rounded-sm border border-[color-mix(in_srgb,var(--color-brass)_25%,transparent)] bg-cream-deep/30 p-7 transition hover:bg-cream-deep hover:shadow-[0_24px_50px_-26px_rgba(184,137,61,0.4)] sm:p-10"
               >
                 <div className="flex min-w-0 flex-col gap-2">
-                  <span className="overline">{t(`status.${p.status}`)}</span>
+                  <span className="overline">
+                    {t(`status.${p.status}`)} · {p.platforms.map((pl) => PLATFORM_LABEL[pl]).join(", ")}
+                  </span>
                   <h2 className="font-display text-3xl break-words text-sumi sm:text-4xl">{t(`${p.slug}.name`)}</h2>
                 </div>
                 <p className="flex-1 font-mincho text-lg leading-relaxed text-sumi sm:text-xl">
@@ -73,7 +75,8 @@ export function ProductsBody() {
                         rel="noreferrer"
                         className="font-mincho text-base text-sumi underline decoration-brass underline-offset-4 hover:decoration-brass-deep"
                       >
-                        {t("visit")} →
+                        {t("visit")}
+                        <span className="sr-only"> {t(`${p.slug}.name`)}</span> →
                       </a>
                     ) : null}
                     <StoreLink

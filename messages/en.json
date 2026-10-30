@@ -10,36 +10,36 @@
   "nav": {
     "home": "Home",
     "products": "Products",
-    "about": "Company",
+    "about": "About",
     "contact": "Contact",
     "switch": "Türkçe",
     "cta_primary": "Get in touch",
     "dropdown": {
-      "about_label": "About us",
-      "about_desc": "Get to know Akaya Labs and our philosophy",
+      "about_label": "Akaya Labs",
+      "about_desc": "Who runs it and how it works",
       "vision_label": "Our Vision",
       "vision_desc": "Few engagements done well",
       "mission_label": "Our Mission",
-      "mission_desc": "Precise, fast, premium delivery"
+      "mission_desc": "Written scope, the agreed date"
     }
   },
   "seo": {
-    "default_title": "Akaya Labs — Software Studio for Web, Mobile and Custom Applications",
-    "default_description": "Independent software studio. Corporate websites, mobile apps, B2B SaaS and macOS utilities — delivered end to end by one team in Rize, Türkiye.",
-    "keywords": "software studio, web development, mobile app development, SaaS development, B2B platform, macOS app, Next.js, Flutter, .NET, indie studio Türkiye",
+    "default_title": "Akaya Labs — Software Studio for Web, Mobile and Custom Apps",
+    "default_description": "A one-person software studio in Rize, Türkiye, run by Ahmet Karaca. It ships its own apps and takes on website, mobile and custom software projects.",
     "pages": {
-      "products": "Products by Akaya Labs: {names}. Independently built apps for iOS, macOS and the web.",
-      "about": "Meet Akaya Labs: an independent software studio based in Rize, Türkiye — how we work and the principles we hold to.",
-      "vision": "The Akaya Labs vision: fewer, carefully made things; growing the quality of the work rather than its volume.",
-      "mission": "The Akaya Labs mission: meticulous, fast, premium delivery that gets the job finished.",
-      "contact": "Get in touch with Akaya Labs. For collaborations, licensing or project enquiries we reply within 1–2 business days."
+      "products": "Apps by Akaya Labs that are live today: {names}.",
+      "about": "Akaya Labs is a one-person software studio founded by Ahmet Karaca in Rize. How it works, what it turns down and what it promises.",
+      "vision": "Akaya Labs takes on few projects and stays small on purpose. It looks for growth in the quality of the work, not its volume.",
+      "mission": "How Akaya Labs works: a written scope, the agreed date, no unapproved invoices and a channel that stays open after launch.",
+      "contact": "Write to Akaya Labs about a project, a collaboration or one of the products. You will hear back within 1–2 business days.",
+      "privacy": "What personal data the Akaya Labs site processes and why, which cookies it uses and what rights you have."
     }
   },
   "hero": {
     "overline": "EST. MMXXVI · INDEPENDENT",
     "title": "Akaya Labs",
     "tagline": "A software studio. Web, mobile, custom — end to end, all under one roof.",
-    "intro": "Akaya Labs is an independent software studio that turns ideas into shipped products. From corporate websites and mobile apps to B2B dashboards and macOS utilities — every layer is delivered by one team.",
+    "intro": "Akaya Labs is a one-person software studio in Rize, Türkiye, run by Ahmet Karaca. It ships its own apps and takes on a few client projects a year. Design, code and release are all done by the same person.",
     "cta_primary": "Let's work together",
     "cta_secondary": "See the Products"
   },
@@ -65,7 +65,7 @@
       "mobile": {
         "tag": "Mobile Application",
         "title": "iOS and Android",
-        "body": "App Store and Play Store-ready mobile apps — one team, both platforms shipped in parallel."
+        "body": "Mobile apps for the App Store and Play Store, built from one codebase."
       },
       "systems": {
         "tag": "Management Systems",
@@ -75,35 +75,60 @@
       "desktop": {
         "tag": "Desktop Application",
         "title": "macOS and Windows",
-        "body": "macOS menubar utilities, Windows desktop applications and system tools — distributed via App Store, signed DMG or MSI."
+        "body": "macOS menu bar utilities, Windows desktop apps and system tools, distributed through the App Store or as signed downloads."
       }
     }
   },
   "process": {
     "overline": "Process",
     "title": "From first conversation to live release — every step transparent.",
-    "subtitle": "Every engagement runs on an agreed roadmap. No surprise invoices, no scope-creep changes.",
+    "subtitle": "Every project runs on an agreed roadmap. Out-of-scope changes and extra costs need written approval first.",
     "steps": {
-      "discovery": { "tag": "01", "title": "First conversation", "body": "We turn your idea, goals and scope into a clear roadmap. No commitment required." },
-      "plan": { "tag": "02", "title": "Design and technical plan", "body": "Interface design, architectural decisions and technology choices. We don't start writing code without an approved plan." },
-      "build": { "tag": "03", "title": "Build and test", "body": "Iterative deliveries with observability and quality control. Every milestone ships with a live preview." },
-      "launch": { "tag": "04", "title": "Launch and support", "body": "Production setup, handover and training. The channel stays open for maintenance and new features after launch." }
+      "discovery": {
+        "tag": "01",
+        "title": "First conversation",
+        "body": "We turn your idea, goals and scope into a clear roadmap. No commitment required."
+      },
+      "plan": {
+        "tag": "02",
+        "title": "Design and technical plan",
+        "body": "Interface design, architectural decisions and technology choices. We don't start writing code without an approved plan."
+      },
+      "build": {
+        "tag": "03",
+        "title": "Build and test",
+        "body": "Delivery in stages, with observability and quality control alongside. Every milestone ships with a live preview."
+      },
+      "launch": {
+        "tag": "04",
+        "title": "Launch and support",
+        "body": "Production setup, handover and training. The channel stays open for maintenance and new features after launch."
+      }
     }
   },
   "why": {
     "overline": "Why Akaya Labs",
-    "title": "We close the gap where agencies usually slip.",
+    "title": "In a one-person studio, work never changes hands.",
     "items": {
-      "single_team": { "title": "Delivered by one team", "body": "Design, frontend, backend and mobile — one team, not separate vendors. No handoff loss, one accountable group." },
-      "ownership": { "title": "We take ownership", "body": "We don't ship and disappear. We treat your product like a partner brand; months later the same people respond." },
-      "long_term": { "title": "Long-term support", "body": "Delivery isn't the end. The channel stays open for maintenance, scaling and new features — retainer or project-based." }
+      "single_team": {
+        "title": "One developer, one point of accountability",
+        "body": "Design, frontend, backend and mobile are not split between people. One person does them all. The limit is equally plain: only a few projects run at once."
+      },
+      "ownership": {
+        "title": "The same person after delivery",
+        "body": "Maintenance and change requests go to the person who wrote the product. There is no other team to hand them to."
+      },
+      "long_term": {
+        "title": "Long-term support",
+        "body": "Delivery isn't the end. The channel stays open for maintenance, scaling and new features — retainer or project-based."
+      }
     }
   },
   "engagement": {
     "overline": "Engagement",
     "title": "We work on a project basis or via retainer.",
-    "body": "We take a limited number of engagements each year. We start with an introductory call and, if there's a fit, align on scope and timeline in writing.",
-    "cta": "Schedule a call"
+    "body": "A few client projects are taken on each year. It starts with an introductory call and, if there's a fit, scope and timeline are agreed in writing.",
+    "cta": "Describe your project"
   },
   "partners": {
     "overline": "Technologies we build with",
@@ -116,24 +141,24 @@
   "closing": {
     "overline": "Working together",
     "title": "Have a project in mind?",
-    "body": "We take a small number of engagements each year and pair them with the time they deserve. If you're scoping a SaaS, a mobile product or a focused internal tool, write a few lines about it — you'll hear back within 1–2 business days.",
+    "body": "Akaya Labs takes on a few client projects a year. If you are planning a SaaS, a mobile product or a focused internal tool, write a few lines; you will hear back within 1–2 business days.",
     "cta": "Start a conversation"
   },
   "products": {
     "title": "Products",
     "subtitle": "{total} products under one roof, {live} of them live. Most are our own brands; one belongs to a client.",
-    "intro": "Products developed by Akaya Labs for our own brands and clients. Each one designed and shipped by a single team.",
+    "intro": "Akaya Labs' own apps and one client project. All of them designed and built by Ahmet Karaca.",
     "status": {
       "live": "Live",
       "review": "App Store review",
-      "in_dev": "In development",
+      "in_dev": "Coming soon",
       "client": "Delivered"
     },
     "visit": "Visit",
     "detail": "View details",
     "coredence": {
       "name": "Coredence",
-      "blurb": "A measured identity for developers: it distils what you have already written into rules about how you work, ties each one to its evidence and hands them to Claude Code. Runs on your own machine."
+      "blurb": "One memory for all your AI assistants. It reads your notes, chats and code and ties every memory to the traces it grew from. Claude Code, Cursor and VS Code read it directly; ChatGPT gets it as text you paste. Runs on macOS and Windows, and the memory stays on your computer."
     },
     "stoneye": {
       "name": "Stoneye",
@@ -141,53 +166,79 @@
     },
     "bytebye": {
       "name": "Bytebye",
-      "blurb": "A photo library cleaner for iPhone — finds duplicates, burst shots, screenshots and blurry frames, and shows exactly how much space you would get back. Nothing leaves your device."
+      "blurb": "A photo and video cleaner for iPhone and iPad. It finds duplicates, similar shots, screenshots, blurry photos and large videos, and shows how much space you would get back before you pay. The scan runs on your device and your photos go nowhere."
     },
     "cleandev": {
       "name": "CleanDev",
-      "blurb": "A developer cleanup tool for macOS — finds what Xcode, simulators, Flutter, Node, Unity and package managers leave behind, explains what removing each item means and keeps what is still in use."
+      "blurb": "A developer cleanup tool for macOS. The Lite edition on the Mac App Store cleans the Flutter, Node and Unity project folders you choose. A full edition covering Xcode, simulators and package caches is coming soon. It explains what removing each item means and keeps what is still in use."
     },
-    "pulsewatch": { "name": "PulseWatch", "blurb": "Website monitoring platform — uptime, performance and alert management in one dashboard." },
-    "snapslim": { "name": "SnapSlim", "blurb": "A file compression toolkit for iOS — shrink photos, videos and PDFs, build ZIP archives. Everything runs on-device; your files never leave the phone." },
-    "cleanlock": { "name": "CleanLock", "blurb": "A keyboard-cleaning helper for macOS — temporarily locks the screen, keys and trackpad so you can wipe your keyboard safely." },
-    "hesaplyor": { "name": "hesaplyor.com", "blurb": "A growing collection of free, ad-supported calculators for everyday math." },
-    "away-kingdom": { "name": "Away Kingdom", "blurb": "A digital-detox strategy game — the longer you stay away from your phone, the more resources you collect to grow your kingdom." },
-    "cevre-sikayet": { "name": "Çevre Şikâyet", "blurb": "An end-to-end municipal complaint platform that lets citizens report environmental issues with photo, location and a tracking code — developed and delivered by Akaya Labs." }
+    "pulsewatch": {
+      "name": "PulseWatch",
+      "blurb": "Website change monitoring. It watches a page, or part of one, and alerts you by email, push, Slack, Discord or webhook when a price, stock level or listing changes. Available on the web and iOS."
+    },
+    "snapslim": {
+      "name": "SnapSlim",
+      "blurb": "A file compression app for iPhone and iPad. It shrinks photos, videos and PDFs and creates and opens ZIP archives. Everything runs on the device; nothing is uploaded."
+    },
+    "cleanlock": {
+      "name": "CleanLock",
+      "blurb": "A keyboard and screen cleaning helper for Mac. While you wipe, it ignores keystrokes and trackpad clicks and covers every display. Afterwards you can test each key."
+    },
+    "hesaplyor": {
+      "name": "hesaplyor.com",
+      "blurb": "Free, ad-supported calculators in Turkish and English. More than 60 tools, including VAT, salary, loans, currency, gold and BMI."
+    },
+    "away-kingdom": {
+      "name": "Away Kingdom",
+      "blurb": "A digital-detox strategy game — the longer you stay away from your phone, the more resources you collect to grow your kingdom."
+    },
+    "cevre-sikayet": {
+      "name": "Çevre Şikâyet",
+      "blurb": "An end-to-end municipal complaint platform that lets citizens report environmental issues with photo, location and a tracking code — developed and delivered by Akaya Labs."
+    },
+    "patchkit": {
+      "name": "Patchkit",
+      "blurb": "SPF, DKIM and DMARC checks. It tests your domain's email authentication, explains each problem and its fix, and reads your DMARC reports to show who is sending mail as you. Available on the web and iOS."
+    },
+    "kinetude": {
+      "name": "Kinetude",
+      "blurb": "A workout app and gym log for iPhone and iPad. It fits 121 training programs to your equipment, injuries and time, and shows 453 exercises muscle by muscle."
+    }
   },
   "about": {
-    "title": "Company",
-    "intro": "Akaya Labs is an independent software studio that turns clients' ideas into shipped products. Below you'll find who we are, how we work, and the principles we operate by.",
+    "title": "About Akaya Labs",
+    "intro": "Akaya Labs is a one-person software studio founded by Ahmet Karaca in Rize, Türkiye, in 2026. It builds and publishes its own apps and takes on a few client projects a year. This page explains how it works and what it turns down.",
     "vision": {
       "overline": "Our Vision",
-      "title": "Few engagements done well. We grow the work, not the headcount.",
+      "title": "Few engagements done well. Growing the work, not the volume.",
       "lede": "Akaya Labs aims to grow in the nature of its work — not in scale.",
       "sections": {
         "scale": {
           "heading": "Not scale, substance",
-          "body": "Akaya Labs is deliberately structured to avoid becoming a large agency. Departmentalised structures, hierarchical approval chains and processes that leave the client without a single point of contact tend to erode the natural quality of software work. Instead, we take a limited number of engagements each year and keep the team intentionally small, preserving the maximum attention we can give to every project. This choice constrains the revenue line in the short term, but in the long term it compounds the quality of our portfolio and the depth of client satisfaction."
+          "body": "Akaya Labs stays small on purpose. It takes a few client projects a year, which leaves enough time for those projects and for its own products. This limits revenue; in return, every project gets the direct attention of the person building it."
         },
         "longevity": {
-          "heading": "Products that still work years later",
-          "body": "The real scorecard for a software studio is not the number of projects shipped last month; it is whether the products delivered three years ago are still running cleanly today. That is the measure Akaya Labs holds itself to. The longevity of the products we deliver, the multi-year partnerships with our clients, and the quality of the growing portfolio are, for us, a single dashboard. A new engagement is often less about acquiring a new client and more about deepening an existing relationship."
+          "heading": "The measure: still standing later",
+          "body": "Akaya Labs was founded in 2026, so it cannot yet show what its products look like years on. The goal is plain: a product delivered today should still run well, and still be maintainable, three years from now. What can be shown today is the live products and the updates they receive."
         },
         "partnership": {
-          "heading": "A client portfolio, not a sales pipeline",
-          "body": "The standard agency model targets at least ten new clients per year, and that target tends to put sales ahead of product. For Akaya Labs, the unit is a client portfolio, not a sales pipeline. Building deep, multi-year partnerships with a small number of clients serves both the studio and the client in the long term. Every engagement we deliver is treated as the start of a relationship we expect to still hold ten years from now."
+          "heading": "Few clients, long relationships",
+          "body": "Akaya Labs does not work to a sales target. It aims for a working relationship with a few clients that continues after launch. Each project is planned so that the channel for maintenance and changes stays open."
         },
         "discipline": {
           "heading": "Disciplined growth",
-          "body": "We do not reject growth; we hold that the quality of growth must come before its volume. Taking on more work and expanding the team would reduce average cost — and, unfortunately, reduce average quality at the same rate. Akaya Labs makes a different choice: we grow professionally by taking on work of higher value and complexity. We may, one day, work alongside one or two senior collaborators; that growth would deepen the existing discipline, not departmentalise it."
+          "body": "There is no intention of refusing growth, but the quality of the work comes first. Akaya Labs chooses to grow through more valuable and complex work rather than more of it. One day it may work with one or two senior collaborators; that would mean keeping the same discipline, not building departments."
         }
       }
     },
     "mission": {
       "overline": "Our Mission",
-      "title": "A precise, fast, premium and finishing development process.",
+      "title": "A precise, fast, premium development process that finishes the job.",
       "lede": "Akaya Labs' promise to clients can be summarised in a single sentence: delivered on the date agreed, at the quality promised, without surprises.",
       "sections": {
         "precision": {
           "heading": "Precise",
-          "body": "Akaya Labs contracts do not contain vague phrases like 'included in scope' or 'we'll figure it out later'. Every engagement begins, before the contract is signed, with a written scope document that defines as clearly what will be built as what will not. Any changes, additional costs or schedule shifts that emerge during the engagement are re-aligned in writing. We do not put surprise invoices in front of clients; respecting discipline is a corporate behaviour for us, not a marketing promise."
+          "body": "Every project starts, before any contract, with a written scope document that states what will and will not be built. Changes, extra costs and schedule shifts are approved in writing. Nothing is invoiced without that approval."
         },
         "speed": {
           "heading": "Fast",
@@ -195,25 +246,25 @@
         },
         "premium": {
           "heading": "Premium",
-          "body": "We combine large-agency engineering standards with a boutique studio's discipline of ownership. This is a concrete set of decisions: performance, accessibility, security and sustainability are committed to at project kickoff, not layered in retroactively. The code we write should be clean, documented and maintainable for a developer reading it two years after launch. Premium, for us, is not a marketing adjective — it is an engineering standard visible in every file we deliver."
+          "body": "Performance, accessibility and security are decided at the start of a project, not added later. Code is kept clean and documented for a developer reading it two years after launch. The live products are the examples."
         },
         "finished": {
           "heading": "We finish what we start",
-          "body": "Many studios ship a product, offer a thirty-day 'support window', and then step away. That model is not sustainable for either the long-term health of the product or the client relationship. Akaya Labs operates differently: the channel stays open after launch for maintenance, scaling, new feature work and bug fixes. Through maintenance clauses in the initial contract or a retainer arrangement, the client continues to receive responses from the same studio and the same developer."
+          "body": "Akaya Labs does not ship a product and disappear. The channel stays open after launch for maintenance, scaling, new features and bug fixes. Through maintenance clauses or a retainer, the client keeps getting answers from the same developer."
         },
         "discipline": {
           "heading": "Disciplined",
-          "body": "The values of a studio are, in practice, the filters it applies at the intake stage. For Akaya Labs those filters are clear: we do not design manipulative patterns, fabricated urgency, deceptive free-to-paid funnels or hidden subscriptions. We do not build software for gambling, betting or fraud-driven business models. These are not marketing lines but a corporate discipline, raised openly in the first conversation, and, where necessary, leading to declining the engagement."
+          "body": "A studio's values show in the work it accepts. Akaya Labs does not design manipulative patterns, fabricated urgency, deceptive free-to-paid funnels or hidden subscriptions, and does not build software for gambling, betting or fraud-driven business models. These limits are raised openly in the first conversation and, where necessary, the project is declined."
         }
       }
     },
     "overline": "Manifesto",
     "manifesto": {
       "lede": "Disciplined software. Delivery that keeps its word.",
-      "p1": "Akaya Labs is an independent software studio that turns clients' ideas into shipped products. From interface design to frontend, from server to mobile, from infrastructure setup through to live support, every layer is planned, built and delivered by the same team. This structure removes the cross-layer handoff loss typical of traditional agency models; the client always has a single point of contact and responsibility is never diluted.",
+      "p1": "Akaya Labs is a one-person software studio. Interface design, frontend, server, mobile, infrastructure and post-launch support are all in the same hands. Nothing is lost between layers, and there is one person to ask. The cost is just as clear: only a few projects run at once.",
       "p2": "We keep our distance from both extremes the software industry tends toward: the half-finished MVP rushed out in two weeks, and the ambitious engagement that stretches over two years and never actually ships. For Akaya Labs, the right pace is the pace at which a word can be kept. We honour the agreed timeline; when something needs to change, the reason and the revised schedule arrive together, and any additional cost is presented for client approval before an invoice is issued.",
-      "p3": "Premium product, boutique scale is a principle, not a tagline. We take a limited number of engagements each year so every project receives the time, attention and post-launch care it deserves. This choice constrains the studio's revenue line in the short term; in the long term it directly compounds the quality of the portfolio, the depth of the partnerships built with clients, and the longevity of the products delivered.",
-      "p4": "We do not design dark patterns or interfaces that manipulate the user, and we do not build software for gambling, betting or fraud-driven business models. These are not pleasant lines tacked onto a contract; they are corporate filters openly raised in the first conversation and, where required, leading to declining the engagement. Discipline and ethics are not marketing for Akaya Labs — they are the foundation of how the studio works."
+      "p3": "Akaya Labs takes a few projects a year, so that each one gets the time, attention and post-launch care it needs. This limits revenue. Time will show what it returns.",
+      "p4": "Akaya Labs does not design dark patterns or interfaces that manipulate the user, and does not build software for gambling, betting or fraud-driven business models. These limits are raised openly in the first conversation and, where required, the project is declined."
     },
     "story": {
       "overline": "Brand story",
@@ -224,38 +275,38 @@
     },
     "values": {
       "overline": "Our Values",
-      "title": "The working values that make Akaya Labs Akaya Labs.",
+      "title": "The values behind the work.",
       "lede": "Beyond brand identity, three core values shape how we work with clients.",
       "items": {
         "team": {
-          "title": "One team, one point of accountability",
-          "body": "In a typical digital agency model the designer may sit at one company, the frontend with another freelancer, the backend with a subcontractor and the mobile work with a third team. The inevitable outcome of this structure is handoff loss: information degrades at every transition, responsibility is spread thin, and defects fall into the 'not my area' boundary unowned. Akaya Labs rejects that model outright; every layer is built by the same team. A decision taken in the design file is taken by someone who understands how it will land in code. The client always knows whom to ask."
+          "title": "One person, one point of accountability",
+          "body": "Design decisions are made by the person who will write the code. The client always knows whom to ask. Illness or a full calendar are real risks in this structure, which is why schedules are written down and source code and access are documented and handed over to the client."
         },
         "longterm": {
           "title": "Long-term maintenance",
-          "body": "The real life of a software product begins on the day it ships, not during delivery. Akaya Labs treats post-launch performance, maintenance, security updates and scaling as first-class concerns rather than optional add-ons. Both contract-based maintenance arrangements and retainer-style long-term partnerships are available. We do not move on the moment the product is live; post-launch support is the foundation of the long-term relationship with the client."
+          "body": "The real life of a software product begins on the day it ships, not during delivery. Akaya Labs treats post-launch performance, maintenance, security updates and scaling as first-class concerns rather than optional add-ons. Post-launch maintenance is available through a project-based agreement or a retainer."
         },
         "quality": {
-          "title": "Agency-grade quality, independent studio",
-          "body": "When a client chooses Akaya Labs, they receive the engineering quality and process discipline of a large agency together with the flexibility and ownership of a small studio. Code quality, documentation, test coverage, observability and security standards are held at corporate level regardless of the project's size. For Akaya Labs, operating as an independent studio does not mean working to a lower standard; it means offering a more personal service."
+          "title": "Small studio, stated standards",
+          "body": "Performance, accessibility and security are discussed at the start of a project. Automated tests are standard on the backend; the client side is tested by hand on real devices. Code is written for the next developer reading it two years on, and architecture decisions are documented."
         }
       }
     },
     "approach": {
       "overline": "How we work",
-      "title": "How we partner with our clients.",
+      "title": "How client projects run.",
       "items": {
         "partnership": {
           "title": "Partner, not vendor",
-          "body": "In the traditional agency model the client corresponds with a vendor to obtain a digital product; the vendor finishes the design, writes the code, sends an invoice and leaves. Akaya Labs finds that model insufficient. We approach the client as a technology partner that accounts for the long-term health of the product. Decisions are made together rather than over written notes; architectural choices, scaling plans, third-party dependencies and long-term maintenance costs are discussed openly. Risks are surfaced before they materialise, not after."
+          "body": "Akaya Labs does not work like a vendor that finishes the design, sends an invoice and leaves; it also accounts for the long-term health of the product. Architecture choices, third-party dependencies and maintenance costs are discussed together, and the outcome is put in writing. Risks are raised before they materialise, not after."
         },
         "scope": {
           "title": "Written scope, no surprises",
-          "body": "Every project begins with an agreed, written scope document. It defines the technical requirements, the delivery schedule, the payment plan, the number of revisions included and what falls outside the engagement. Changes that emerge during the project are aligned through an additional written agreement before they are added to scope; any extra cost or schedule shift is presented for client approval before an invoice is issued. 'We'll see later' and 'let's not discuss it now' do not appear in Akaya Labs contracts."
+          "body": "Every project begins with an agreed, written scope document. It defines the technical requirements, the delivery schedule, the payment plan, the number of revisions included and what falls outside the project. Changes that emerge along the way are agreed in writing before they join the scope; any extra cost or time is presented for client approval before an invoice is issued."
         },
         "communication": {
           "title": "Right channel, fast response",
-          "body": "Client communication is conducted through a single official channel agreed at the start of the contract, rather than across a fragmented set of tools. That channel — email, corporate messaging or a project management tool, chosen to fit the engagement — is held constant throughout. Official matters receive a response within one or two business days; a separate fast channel can be defined for technical emergencies. The client always speaks with the same person through the same channel; there are no team rotations or 'we've assigned you a new account manager' interruptions."
+          "body": "Client communication runs through a single official channel agreed at the start of the project. That channel, whether email, business messaging or a project management tool, stays the same throughout. Official matters receive a response within one or two business days; a separate fast channel can be defined for technical emergencies. The client always speaks with the same person through the same channel."
         },
         "ownership": {
           "title": "Ownership stays with the client",
@@ -267,19 +318,45 @@
       "overline": "Founder",
       "name": "Ahmet Karaca",
       "role": "Founder · Software Developer",
-      "bio": "Solo developer based in Rize, Türkiye. Designs, builds and ships every product under the Akaya Labs roof.",
+      "bio": "Founder and only developer of Akaya Labs, based in Rize, Türkiye. Designs, builds and ships every product the studio makes.",
       "cta_email": "Send an email",
       "cta_linkedin": "LinkedIn",
       "cta_github": "GitHub"
+    },
+    "faq": {
+      "overline": "In short",
+      "items": {
+        "what": {
+          "q": "What is Akaya Labs?",
+          "a": "Akaya Labs is a one-person software studio founded by Ahmet Karaca in Rize, Türkiye, in 2026. It builds and publishes its own apps and takes on a few client projects a year."
+        },
+        "apps": {
+          "q": "What apps does it make?",
+          "a": "Its live products are {names}. Çevre Şikâyet was built and delivered for a client."
+        },
+        "work": {
+          "q": "What work does it take on?",
+          "a": "Websites, mobile apps, web dashboards, and macOS and Windows apps. It does not build for gambling, betting or fraud-based businesses, or design interfaces that mislead users."
+        },
+        "size": {
+          "q": "How big is it?",
+          "a": "One person. Ahmet Karaca does the design, code and release."
+        }
+      }
     }
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "Collaboration, licensing or a plain question — this is the place.",
-    "field": { "name": "Your name", "email": "Email", "subject": "Subject", "message": "Your message" },
+    "subtitle": "A project, a collaboration or a plain question. This is the place.",
+    "field": {
+      "name": "Your name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Your message"
+    },
     "submit": "Send",
     "submitting": "Sending…",
-    "success": "Your message is on its way. You'll get a reply within 1–2 business days.",
+    "success": "Your message has arrived. You'll get a reply within 1–2 business days.",
     "error_generic": "Something went wrong, please try again.",
     "error_rate_limit": "Too many requests. Please try again later.",
     "validation": {
@@ -303,13 +380,17 @@
     }
   },
   "footer": {
-    "about": "Independent software studio. Web, mobile and custom applications — one team, end to end.",
+    "about": "Independent software studio. Web, mobile and custom applications, end to end.",
     "sitemap": "Sitemap",
     "contact_label": "Contact",
     "address": "Rize, Türkiye",
     "response_time": "Reply within 1–2 business days",
     "social_label": "Links",
-    "copyright": "© 2026 Akaya Labs. All rights reserved."
+    "copyright": "© 2026 Akaya Labs. All rights reserved.",
+    "privacy": "Privacy",
+    "est_line": "EST. MMXXVI · RIZE, TR",
+    "hesaplyor_label": "hesaplyor.com: free calculators",
+    "hesaplyor_href": "https://hesaplyor.com/en"
   },
   "not_found": {
     "overline": "404",
@@ -318,5 +399,35 @@
     "home": "Back to home",
     "products": "Browse products",
     "contact": "Write to us"
+  },
+  "privacy": {
+    "title": "Privacy",
+    "updated": "Last updated: 30 October 2026",
+    "sections": {
+      "controller": {
+        "heading": "Data controller",
+        "body": "This site is operated for Akaya Labs by Ahmet Karaca (Rize, Türkiye). This notice is provided under Türkiye's Personal Data Protection Law No. 6698. Contact: info@akayalabs.com."
+      },
+      "form": {
+        "heading": "Contact form",
+        "body": "When you submit the form, your name, email address, subject and message are sent by email so that a reply can be given. To prevent abuse, your IP address is processed briefly to enforce a sending limit. Messages are kept for as long as your request and any legal obligations require."
+      },
+      "analytics": {
+        "heading": "Analytics",
+        "body": "This site uses Google Analytics. Unless you consent in the cookie banner, no analytics cookies are written; cookieless, anonymous measurement signals may still reach Google. Vercel Analytics and Speed Insights also report page views and speed measurements in aggregate. You can withdraw consent by clearing your browser data."
+      },
+      "cookies": {
+        "heading": "Cookies and browser storage",
+        "body": "The NEXT_LOCALE cookie remembers your language, and a cookie-consent entry in browser storage remembers your cookie choice. Analytics cookies are written only with your consent."
+      },
+      "transfer": {
+        "heading": "Service providers",
+        "body": "Vercel and Google are used for hosting and analytics, and an email provider for form messages. These providers' servers may be located abroad."
+      },
+      "rights": {
+        "heading": "Your rights",
+        "body": "Under Article 11 of the law you may ask whether your data is processed, request its correction or deletion, and object to its processing. Send requests to info@akayalabs.com."
+      }
+    }
   }
 }

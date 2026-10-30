@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "motion/react";
-import type { Product } from "@/lib/products";
+import { PLATFORM_LABEL, type Product } from "@/lib/products";
 import { StoreLink } from "./store-link";
 import { Link } from "@/i18n/routing";
 import { Tilt3D } from "./motion/tilt-3d";
@@ -23,7 +23,9 @@ export function ProductCard({ product }: { product: Product }) {
           className="absolute inset-x-6 top-0 h-px bg-[color-mix(in_srgb,var(--color-brass)_0%,transparent)] transition-all duration-500 group-hover:bg-[color-mix(in_srgb,var(--color-brass)_70%,transparent)] sm:inset-x-7"
         />
         <div className="flex min-w-0 flex-col gap-1">
-          <span className="overline">{t(`status.${product.status}`)}</span>
+          <span className="overline">
+            {t(`status.${product.status}`)} · {product.platforms.map((pl) => PLATFORM_LABEL[pl]).join(", ")}
+          </span>
           <h3 className="font-display text-2xl break-words text-sumi">{t(`${product.slug}.name`)}</h3>
           <span
             aria-hidden
@@ -39,7 +41,8 @@ export function ProductCard({ product }: { product: Product }) {
               rel="noreferrer"
               className="self-start text-sm font-medium text-sumi underline decoration-brass underline-offset-4 transition group-hover:decoration-brass-deep"
             >
-              {t("visit")}{" "}
+              {t("visit")}
+              <span className="sr-only"> {t(`${product.slug}.name`)}</span>{" "}
               <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
             </a>
           ) : (

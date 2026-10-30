@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
-import { products, type Platform } from "@/lib/products";
+import { products, PLATFORM_LABEL } from "@/lib/products";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://akayalabs.com";
 
@@ -9,8 +9,10 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://akayalabs.com";
 const OG_LOCALES: Record<string, string> = { tr: "tr_TR", en: "en_US" };
 
 const ORG_ID = `${SITE_URL}/#organization`;
+const FOUNDER_ID = `${SITE_URL}/#founder`;
+const APPLE_DEVELOPER_URL = "https://apps.apple.com/us/developer/ahmet-karaca/id1880361062";
 
-export type PageKey = "products" | "about" | "vision" | "mission" | "contact";
+export type PageKey = "products" | "about" | "vision" | "mission" | "contact" | "privacy";
 
 export function localizedUrl(locale: string, pathname: string) {
   return `${SITE_URL}/${locale}${pathname === "/" ? "" : pathname}`;
@@ -39,7 +41,6 @@ export async function buildMetadata(opts: {
     metadataBase: new URL(SITE_URL),
     title,
     description,
-    keywords: seoT("keywords").split(",").map((k) => k.trim()),
     alternates: {
       canonical: alternates[opts.locale],
       languages: { ...alternates, "x-default": alternates[routing.defaultLocale] },
@@ -69,14 +70,18 @@ export function OrganizationSchema({ locale }: { locale: string }) {
     logo: `${SITE_URL}/brand/logo-mark.png`,
     description:
       locale === "tr"
-        ? "Bağımsız yazılım stüdyosu. Web sitesi, mobil uygulama, B2B SaaS ve macOS uygulamaları."
-        : "Independent software studio. Websites, mobile apps, B2B SaaS and macOS utilities.",
+        ? "Ahmet Karaca'nın Rize'de kurduğu tek kişilik yazılım stüdyosu. Kendi uygulamalarını yayımlar; web sitesi, mobil uygulama ve özel yazılım işi alır."
+        : "A one-person software studio founded by Ahmet Karaca in Rize, Türkiye. It ships its own apps and takes on website, mobile and custom software projects.",
     sameAs: [
-      "https://linkedin.com/company/akayalabs",
+      "https://www.linkedin.com/company/akayalabs",
       "https://github.com/akayalabs",
       "https://www.instagram.com/akayalabs",
       "https://x.com/akayalabs",
+      "https://www.youtube.com/@akayalabs",
+      APPLE_DEVELOPER_URL,
     ],
+    founder: { "@id": FOUNDER_ID },
+    numberOfEmployees: { "@type": "QuantitativeValue", value: 1 },
     address: { "@type": "PostalAddress", addressLocality: "Rize", addressCountry: "TR" },
     email: "info@akayalabs.com",
     foundingDate: "2026",
@@ -88,16 +93,24 @@ export function OrganizationSchema({ locale }: { locale: string }) {
       "macOS applications",
     ],
   };
+  const founder = {
+    "@type": "Person",
+    "@id": FOUNDER_ID,
+    name: "Ahmet Karaca",
+    jobTitle: locale === "tr" ? "Kurucu, Yazılım Geliştirici" : "Founder, Software Developer",
+    worksFor: { "@id": ORG_ID },
+    sameAs: ["https://www.linkedin.com/in/ahmet-karaca-a585b4408", APPLE_DEVELOPER_URL],
+  };
   // Site adı Google sonuçlarında URL yerine "Akaya Labs" olarak görünsün diye WebSite ayrıca bildirilir.
   const website = {
     "@type": "WebSite",
-    "@id": `${SITE_URL}/#website`,
+    "@id": `${localizedUrl(locale, "/")}#website`,
     name: "Akaya Labs",
     url: localizedUrl(locale, "/"),
     inLanguage: locale,
     publisher: { "@id": ORG_ID },
   };
-  return <JsonLd data={{ "@context": "https://schema.org", "@graph": [organization, website] }} />;
+  return <JsonLd data={{ "@context": "https://schema.org", "@graph": [organization, founder, website] }} />;
 }
 
 function JsonLd({ data }: { data: object }) {
@@ -125,20 +138,13 @@ export async function ProductsSchema({ locale }: { locale: string }) {
         url: p.url,
         ...(p.appStoreUrl && p.appStoreUrl !== p.url ? { sameAs: [p.appStoreUrl] } : {}),
         applicationCategory: p.category,
-        operatingSystem: p.platforms.map((pl) => PLATFORM_OS[pl]).join(", "),
-        author: { "@type": "Organization", "@id": ORG_ID, name: "Akaya Labs", url: SITE_URL },
+        operatingSystem: p.platforms.map((pl) => PLATFORM_LABEL[pl]).join(", "),
+        author: { "@id": ORG_ID },
       },
     })),
   };
   return <JsonLd data={data} />;
 }
-
-const PLATFORM_OS: Record<Platform, string> = {
-  ios: "iOS",
-  android: "Android",
-  macos: "macOS",
-  web: "Web",
-};
 
 // Alt sayfalar için ekmek kırıntısı; Google arama sonucunda URL yerine yol gösterir.
 export async function BreadcrumbSchema({

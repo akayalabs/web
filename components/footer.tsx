@@ -34,7 +34,10 @@ export function Footer() {
             <li><Link href="/" className="hover:text-sumi">{tn("home")}</Link></li>
             <li><Link href="/products" className="hover:text-sumi">{tn("products")}</Link></li>
             <li><Link href="/about" className="hover:text-sumi">{tn("about")}</Link></li>
+            <li><Link href="/about/vision" className="hover:text-sumi">{tn("dropdown.vision_label")}</Link></li>
+            <li><Link href="/about/mission" className="hover:text-sumi">{tn("dropdown.mission_label")}</Link></li>
             <li><Link href="/contact" className="hover:text-sumi">{tn("contact")}</Link></li>
+            <li><Link href="/privacy" className="hover:text-sumi">{t("privacy")}</Link></li>
           </ul>
         </div>
 
@@ -58,7 +61,7 @@ export function Footer() {
         <div className="flex flex-col gap-4">
           <span className="overline">{t("social_label")}</span>
           <ul className="flex flex-col gap-2">
-            <li><a href="https://linkedin.com/company/akayalabs" target="_blank" rel="noreferrer" className="hover:text-sumi">LinkedIn</a></li>
+            <li><a href="https://www.linkedin.com/company/akayalabs" target="_blank" rel="noreferrer" className="hover:text-sumi">LinkedIn</a></li>
             <li><a href="https://instagram.com/akayalabs" target="_blank" rel="noreferrer" className="hover:text-sumi">Instagram</a></li>
             <li><a href="https://x.com/akayalabs" target="_blank" rel="noreferrer" className="hover:text-sumi">X</a></li>
             <li><a href="https://github.com/akayalabs" target="_blank" rel="noreferrer" className="hover:text-sumi">GitHub</a></li>
@@ -71,9 +74,9 @@ export function Footer() {
       <div className="mx-auto flex max-w-[1800px] flex-col items-start justify-between gap-4 sm:flex-row sm:items-end">
         <div className="font-mincho text-xs">{t("copyright")}</div>
         <div className="flex flex-col items-end gap-1">
-          <div className="font-mincho text-xs uppercase tracking-[0.22em] text-brass-deep">EST. MMXXVI · RİZE, TR</div>
-          <a href="https://hesaplyor.com" target="_blank" rel="noopener noreferrer" className="font-mincho text-xs text-sumi-soft/60 hover:text-sumi-soft transition-colors">
-            hesaplyor.com — ücretsiz hesaplama araçları
+          <div className="font-mincho text-xs uppercase tracking-[0.22em] text-brass-deep">{t("est_line")}</div>
+          <a href={t("hesaplyor_href")} target="_blank" rel="noopener noreferrer" className="font-mincho text-xs text-sumi-soft/60 hover:text-sumi-soft transition-colors">
+            {t("hesaplyor_label")}
           </a>
         </div>
       </div>

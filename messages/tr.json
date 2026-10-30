@@ -10,36 +10,36 @@
   "nav": {
     "home": "Ana sayfa",
     "products": "Ürünler",
-    "about": "Kurumsal",
+    "about": "Hakkında",
     "contact": "İletişim",
     "switch": "English",
     "cta_primary": "İletişime geçin",
     "dropdown": {
-      "about_label": "Hakkımızda",
-      "about_desc": "Akaya Labs'i ve felsefemizi tanıyın",
+      "about_label": "Akaya Labs",
+      "about_desc": "Kim yürütüyor, nasıl çalışıyor",
       "vision_label": "Vizyonumuz",
       "vision_desc": "Az ama özenli işler, sayı değil iş büyütmek",
       "mission_label": "Misyonumuz",
-      "mission_desc": "Titiz, hızlı, premium ve iş bitiren teslim"
+      "mission_desc": "Yazılı kapsam, söz verilen tarih"
     }
   },
   "seo": {
     "default_title": "Akaya Labs — Web Sitesi, Mobil ve Özel Yazılım Stüdyosu",
-    "default_description": "Bağımsız yazılım stüdyosu. Web sitesi yaptırma, mobil uygulama geliştirme, B2B SaaS ve macOS uygulamaları. Rize merkezli, tek elden teslim.",
-    "keywords": "yazılım stüdyosu, web sitesi yaptırma, mobil uygulama yaptırma, kurumsal web sitesi, SaaS geliştirme, B2B uygulama, macOS uygulaması, Next.js, Flutter, .NET, Rize yazılım",
+    "default_description": "Ahmet Karaca'nın Rize'deki tek kişilik yazılım stüdyosu. Kendi uygulamalarını yayımlar; web sitesi, mobil uygulama ve özel yazılım işi alır.",
     "pages": {
-      "products": "Akaya Labs ürünleri: {names}. iOS, macOS ve web için bağımsız olarak geliştirilen uygulamalar.",
-      "about": "Akaya Labs'i tanıyın: Rize merkezli bağımsız yazılım stüdyosu, çalışma biçimimiz ve bağlı kaldığımız ilkeler.",
-      "vision": "Akaya Labs vizyonu: az ama özenli işler; sayıyı değil, işin niteliğini büyütmek.",
-      "mission": "Akaya Labs misyonu: titiz, hızlı, premium ve iş bitiren teslim.",
-      "contact": "Akaya Labs ile iletişime geçin. İş birliği, lisans veya proje talepleri için 1–2 iş günü içinde yanıt veriyoruz."
+      "products": "Akaya Labs'in yayındaki uygulamaları: {names}.",
+      "about": "Akaya Labs, Ahmet Karaca'nın Rize'de kurduğu tek kişilik yazılım stüdyosu. Nasıl çalıştığı, neyi kabul etmediği ve neye söz verdiği.",
+      "vision": "Akaya Labs yılda az iş alır ve küçük kalmayı seçer. Büyüme, işin sayısında değil niteliğinde aranır.",
+      "mission": "Akaya Labs'in çalışma sözü: yazılı kapsam, söz verilen tarih, onaysız fatura yok ve yayından sonra açık kalan bir kanal.",
+      "contact": "Proje, iş birliği veya ürünlerle ilgili sorular için Akaya Labs'e yazın. Yanıt 1–2 iş günü içinde gelir.",
+      "privacy": "Akaya Labs'in sitede hangi kişisel verileri neden işlediği, hangi çerezleri kullandığı ve KVKK kapsamındaki haklarınız."
     }
   },
   "hero": {
     "overline": "EST. MMXXVI · BAĞIMSIZ",
     "title": "Akaya Labs",
     "tagline": "Yazılım stüdyosu. Web, mobil ve özel uygulamalar — tek elden, baştan sona.",
-    "intro": "Akaya Labs, fikirleri yayına hazır ürünlere dönüştüren bağımsız bir yazılım stüdyosudur. Kurumsal web sitelerinden mobil uygulamalara, B2B panellerden macOS araçlarına kadar her katmanı aynı ekip teslim eder.",
+    "intro": "Akaya Labs, Ahmet Karaca'nın Rize'de yürüttüğü tek kişilik yazılım stüdyosu. Kendi uygulamalarını yayımlar, yılda az sayıda müşteri işi alır. Tasarımdan yayına kadar her katmanı aynı kişi yapar.",
     "cta_primary": "Birlikte çalışalım",
     "cta_secondary": "Ürünleri Gör"
   },
@@ -65,7 +65,7 @@
       "mobile": {
         "tag": "Mobil Uygulama",
         "title": "iOS ve Android",
-        "body": "App Store ve Play Store için yayına hazır mobil uygulamalar — tek bir ekip, iki platforma birden teslim."
+        "body": "App Store ve Play Store için mobil uygulamalar. Tek kod tabanı, iki platform."
       },
       "systems": {
         "tag": "Yönetim Sistemleri",
@@ -75,35 +75,60 @@
       "desktop": {
         "tag": "Masaüstü Uygulaması",
         "title": "macOS ve Windows",
-        "body": "macOS menübar yardımcıları, Windows masaüstü uygulamaları ve sistem araçları — App Store, imzalı DMG veya MSI ile dağıtım."
+        "body": "macOS menü çubuğu uygulamaları, Windows masaüstü uygulamaları ve sistem araçları. Dağıtım App Store veya imzalı indirme ile yapılır."
       }
     }
   },
   "process": {
     "overline": "Süreç",
     "title": "İlk görüşmeden canlı sürüme — her adımı şeffaf.",
-    "subtitle": "Her proje, üzerinde uzlaşılmış bir yol haritası ile yürür. Sürpriz fatura yok, kapsam dışı değişiklik yok.",
+    "subtitle": "Her proje üzerinde uzlaşılmış bir yol haritasıyla yürür. Kapsam dışı değişiklik ve ek maliyet, yazılı onay olmadan işleme alınmaz.",
     "steps": {
-      "discovery": { "tag": "01", "title": "İlk görüşme", "body": "Aklınızdaki fikri, hedeflerinizi ve kapsamı net bir yol haritasına çeviriyoruz. Herhangi bir taahhüt olmaksızın yapılır." },
-      "plan": { "tag": "02", "title": "Tasarım ve teknik plan", "body": "Arayüz tasarımı, mimari kararlar ve teknoloji seçimi tarafımızca hazırlanır. Onaylı bir plan olmadan koda başlamıyoruz." },
-      "build": { "tag": "03", "title": "Geliştirme ve test", "body": "İterasyonlu teslimler, gözlem ve kalite kontrolü birlikte. Her aşama sonunda canlı önizleme paylaşılır." },
-      "launch": { "tag": "04", "title": "Yayın ve destek", "body": "Sunucuya kurulum, geçiş desteği ve eğitim. Ürün yayına çıktıktan sonra bakım ve geliştirme kanalı açık kalır." }
+      "discovery": {
+        "tag": "01",
+        "title": "İlk görüşme",
+        "body": "Aklınızdaki fikri, hedeflerinizi ve kapsamı net bir yol haritasına çeviriyoruz. Herhangi bir taahhüt olmaksızın yapılır."
+      },
+      "plan": {
+        "tag": "02",
+        "title": "Tasarım ve teknik plan",
+        "body": "Arayüz tasarımı, mimari kararlar ve teknoloji seçimi tarafımızca hazırlanır. Onaylı bir plan olmadan koda başlamıyoruz."
+      },
+      "build": {
+        "tag": "03",
+        "title": "Geliştirme ve test",
+        "body": "Aşama aşama teslim, gözlem ve kalite kontrolü birlikte yürür. Her aşama sonunda canlı önizleme paylaşılır."
+      },
+      "launch": {
+        "tag": "04",
+        "title": "Yayın ve destek",
+        "body": "Sunucuya kurulum, geçiş desteği ve eğitim. Ürün yayına çıktıktan sonra bakım ve geliştirme kanalı açık kalır."
+      }
     }
   },
   "why": {
     "overline": "Neden Akaya Labs",
-    "title": "Ajansların aksadığı yerde fark yaratıyoruz.",
+    "title": "Tek kişilik stüdyoda iş el değiştirmez.",
     "items": {
-      "single_team": { "title": "Tek ekip, tek sorumluluk", "body": "Tasarımcı, önyüz, arka uç ve mobil ayrı şirketlerde değil — aynı ekipte. İletişim kaybı yok, sorumluluk tek." },
-      "ownership": { "title": "Sahiplenen ekip", "body": "Kodu yazıp ortadan kaybolmuyoruz. Ürününüze marka ortağı gibi yaklaşıyoruz; aylar sonra bile aynı kişiler dönüş yapıyor." },
-      "long_term": { "title": "Uzun vadeli destek", "body": "Teslim sonu nokta değil. Bakım, ölçeklendirme ve yeni özellikler için iletişim kanalı açık kalır — proje bazlı veya sürekli hizmet anlaşması ile." }
+      "single_team": {
+        "title": "Tek geliştirici, tek sorumluluk",
+        "body": "Tasarım, önyüz, arka uç ve mobil farklı kişilere dağılmaz. Hepsini aynı kişi yapar. Bunun sınırı da bellidir: aynı anda az iş alınır."
+      },
+      "ownership": {
+        "title": "Teslimden sonra da aynı kişi",
+        "body": "Bakım ve değişiklik istekleri, ürünü yazan kişiye gider. Aktarılacak başka bir ekip yoktur."
+      },
+      "long_term": {
+        "title": "Uzun vadeli destek",
+        "body": "Teslim sonu nokta değil. Bakım, ölçeklendirme ve yeni özellikler için iletişim kanalı açık kalır — proje bazlı veya sürekli hizmet anlaşması ile."
+      }
     }
   },
   "engagement": {
     "overline": "Çalışma modeli",
     "title": "Proje bazlı veya sürekli hizmet anlaşması ile çalışıyoruz.",
-    "body": "Her yıl sınırlı sayıda iş alıyoruz. Önce bir tanışma görüşmesi yapıyor, uyum varsa kapsam ve takvim üzerine yazılı olarak hizalanıyoruz.",
-    "cta": "Görüşme planla"
+    "body": "Yılda az sayıda müşteri işi alınır. Önce bir tanışma görüşmesi yapılır, uyum varsa kapsam ve takvim yazılı olarak netleştirilir.",
+    "cta": "Projenizi anlatın"
   },
   "partners": {
     "overline": "Kullandığımız teknolojiler",
@@ -116,24 +141,24 @@
   "closing": {
     "overline": "Birlikte çalışmak",
     "title": "Aklınızda bir proje mi var?",
-    "body": "Her yıl sınırlı sayıda iş alıp üzerlerinde hak ettikleri zamanı geçiriyoruz. Bir SaaS, mobil ürün veya odaklı bir kurum içi çözüm düşünüyorsanız birkaç satır iletin; 1–2 iş günü içerisinde tarafımızdan dönüş sağlanacaktır.",
+    "body": "Akaya Labs yılda az sayıda müşteri işi alır. Bir SaaS, mobil ürün veya odaklı bir iç araç düşünüyorsanız birkaç satır yazın; 1–2 iş günü içinde yanıt gelir.",
     "cta": "İletişime geçin"
   },
   "products": {
     "title": "Ürünler",
     "subtitle": "Tek çatı altında {total} ürün, {live} tanesi yayında. Çoğu kendi markalarımız, biri bir müşterimize ait.",
-    "intro": "Akaya Labs'in markalarımız ve müşterilerimiz için geliştirdiği ürünler. Her biri tek bir ekip tarafından tasarlanıp teslim edildi.",
+    "intro": "Akaya Labs'in kendi uygulamaları ve bir müşteri işi. Hepsini Ahmet Karaca tasarlayıp geliştirdi.",
     "status": {
       "live": "Yayında",
       "review": "App Store inceleme",
-      "in_dev": "Geliştirme aşamasında",
+      "in_dev": "Yakında",
       "client": "Teslim edildi"
     },
     "visit": "İncele",
     "detail": "Detayı gör",
     "coredence": {
       "name": "Coredence",
-      "blurb": "Geliştiriciler için ölçülmüş kimlik: yazdıklarından nasıl çalıştığını anlatan kuralları damıtır, her birini kanıtına bağlar ve Claude Code'a verir. Kendi makinende çalışır."
+      "blurb": "Yapay zekâ asistanlarınız için tek hafıza. Notlarınızı, sohbetlerinizi ve kodunuzu okur, her anıyı doğduğu izlere bağlar. Claude Code, Cursor ve VS Code doğrudan okur; ChatGPT'ye yapıştırarak verirsiniz. macOS ve Windows'ta çalışır, hafıza bilgisayarınızda kalır."
     },
     "stoneye": {
       "name": "Stoneye",
@@ -141,22 +166,48 @@
     },
     "bytebye": {
       "name": "Bytebye",
-      "blurb": "iPhone fotoğraf arşivi temizleyicisi — kopya fotoğrafları, seri çekimleri, ekran görüntülerini ve bulanık kareleri bulur, silmeden önce ne kadar yer açılacağını gösterir. Fotoğraflarınız cihazdan çıkmaz."
+      "blurb": "iPhone ve iPad için fotoğraf ve video temizleyici. Kopyaları, benzer kareleri, ekran görüntülerini, bulanık fotoğrafları ve büyük videoları bulur; ödeme yapmadan önce ne kadar yer açılacağını gösterir. Tarama cihazda yapılır, fotoğraflarınız hiçbir yere gitmez."
     },
     "cleandev": {
       "name": "CleanDev",
-      "blurb": "macOS için geliştirici temizlik aracı — Xcode, simülatörler, Flutter, Node, Unity ve paket yöneticilerinin bıraktığı dosyaları bulur, her birini silmenin sonucunu açıklar, hâlâ kullanılanlara dokunmaz."
+      "blurb": "macOS için geliştirici temizlik aracı. Mac App Store'daki Lite sürüm, seçtiğiniz Flutter, Node ve Unity proje klasörlerini temizler. Xcode, simülatör ve paket önbelleklerini de kapsayan tam sürüm yakında. Silmenin sonucunu açıklar, hâlâ kullanılana dokunmaz."
     },
-    "pulsewatch": { "name": "PulseWatch", "blurb": "Web sitesi izleme platformu — uptime, performans ve uyarı yönetimi tek panelde." },
-    "snapslim": { "name": "SnapSlim", "blurb": "iOS için dosya sıkıştırma aracı — fotoğraf, video ve PDF küçültme, ZIP arşivi oluşturma. Tüm işlem cihazda, dosyalarınız hiçbir yere gitmez." },
-    "cleanlock": { "name": "CleanLock", "blurb": "macOS için klavye temizleme yardımcısı — klavyenizi silerken ekranı, tuşları ve trackpad'i geçici olarak kilitler." },
-    "hesaplyor": { "name": "hesaplyor.com", "blurb": "Gündelik hesaplar için büyüyen, ücretsiz hesaplayıcı koleksiyonu." },
-    "away-kingdom": { "name": "Away Kingdom", "blurb": "Dijital detoks odaklı strateji oyunu — telefonunuzdan uzak kaldığınız süre boyunca kaynak biriktirip krallığınızı büyütüyorsunuz." },
-    "cevre-sikayet": { "name": "Çevre Şikâyet", "blurb": "Belediye düzeyinde çevre sorunlarını fotoğraf, konum ve takip kodu ile bildirip izlemeye olanak veren uçtan uca şikâyet platformu — Akaya Labs tarafından geliştirilip teslim edildi." }
+    "pulsewatch": {
+      "name": "PulseWatch",
+      "blurb": "Web sitesi değişiklik takibi. Bir sayfayı ya da sayfanın bir bölümünü izler; fiyat, stok veya ilan değiştiğinde e-posta, push, Slack, Discord ya da webhook ile haber verir. Web'de ve iOS'ta çalışır."
+    },
+    "snapslim": {
+      "name": "SnapSlim",
+      "blurb": "iPhone ve iPad için dosya sıkıştırma aracı. Fotoğraf, video ve PDF küçültür, ZIP oluşturur ve açar. İşlemler cihazda yapılır, dosyalar yüklenmez."
+    },
+    "cleanlock": {
+      "name": "CleanLock",
+      "blurb": "Mac için klavye ve ekran temizleme yardımcısı. Siz silerken tuşları ve trackpad tıklamalarını etkisiz kılar, bütün ekranları kaplar. Ardından tuşları tek tek sınayabilirsiniz."
+    },
+    "hesaplyor": {
+      "name": "hesaplyor.com",
+      "blurb": "Türkçe ve İngilizce, reklam destekli ücretsiz hesaplama araçları. KDV, maaş, kredi, döviz, altın ve BMI dahil 60'tan fazla araç."
+    },
+    "away-kingdom": {
+      "name": "Away Kingdom",
+      "blurb": "Dijital detoks odaklı strateji oyunu — telefonunuzdan uzak kaldığınız süre boyunca kaynak biriktirip krallığınızı büyütüyorsunuz."
+    },
+    "cevre-sikayet": {
+      "name": "Çevre Şikâyet",
+      "blurb": "Belediye düzeyinde çevre sorunlarını fotoğraf, konum ve takip kodu ile bildirip izlemeye olanak veren uçtan uca şikâyet platformu — Akaya Labs tarafından geliştirilip teslim edildi."
+    },
+    "patchkit": {
+      "name": "Patchkit",
+      "blurb": "SPF, DKIM ve DMARC denetimi. Alan adınızın e-posta kimlik doğrulamasını kontrol eder, sorunu ve çözümünü gösterir, DMARC raporlarını okuyarak adınıza kimlerin posta gönderdiğini listeler. Web'de ve iOS'ta çalışır."
+    },
+    "kinetude": {
+      "name": "Kinetude",
+      "blurb": "iPhone ve iPad için antrenman uygulaması ve spor günlüğü. 121 programı ekipmanınıza, sakatlıklarınıza ve zamanınıza göre uyarlar, 453 hareketi kas kas gösterir."
+    }
   },
   "about": {
-    "title": "Kurumsal",
-    "intro": "Akaya Labs, müşterilerinin fikirlerini yayına hazır ürünlere dönüştüren bağımsız bir yazılım stüdyosudur. Aşağıda kim olduğumuzu, nasıl çalıştığımızı ve hangi prensiplerle hareket ettiğimizi bulabilirsiniz.",
+    "title": "Akaya Labs hakkında",
+    "intro": "Akaya Labs, Ahmet Karaca'nın 2026'da Rize'de kurduğu tek kişilik yazılım stüdyosu. Kendi uygulamalarını geliştirip yayımlar, yılda az sayıda müşteri işi alır. Bu sayfa nasıl çalıştığını ve hangi işleri almadığını anlatır.",
     "vision": {
       "overline": "Vizyonumuz",
       "title": "Az ama özenli işler. Sayıyı değil işi büyütmek.",
@@ -164,19 +215,19 @@
       "sections": {
         "scale": {
           "heading": "Ölçek değil, nitelik",
-          "body": "Akaya Labs'i bilinçli olarak büyük bir ajansa dönüşmemek üzerine kurguladık. Departmanlara bölünmüş yapılar, hiyerarşik onay zincirleri ve müşterinin tek bir muhatap bulamadığı süreçler, yazılım üretiminin doğal kalitesini bozar. Bunun yerine yılda sınırlı sayıda iş alıyor, ekibi şişirmeden her projeye verebileceğimiz maksimum dikkati koruyoruz. Bu seçim kısa vadede gelir hattını sınırlasa da uzun vadede portföy kalitesini ve müşteri memnuniyetini katlayarak artırıyor."
+          "body": "Akaya Labs bilinçli olarak küçük kalıyor. Yılda az sayıda müşteri işi alınıyor, böylece kendi ürünlerine ve alınan işlere yeterli zaman kalıyor. Bu seçim geliri sınırlıyor; karşılığında her iş, işi yapan kişinin doğrudan dikkatini görüyor."
         },
         "longevity": {
-          "heading": "Yıllar sonra da çalışan ürünler",
-          "body": "Bir yazılım stüdyosunun gerçek karnesi, geçen ay teslim ettiği proje sayısı değildir; üç yıl önce teslim ettiği ürünlerin bugün hâlâ sağlıklı çalışıyor olmasıdır. Akaya Labs'in başarı ölçüsü budur. Teslim ettiğimiz ürünlerin uzun ömürlülüğü, müşterilerle kurulan yıllar süren ortaklıklar ve büyüyen portföyün kalitesi, bizim için tek bir ölçek panosunda toplanan değerlerdir. Yeni bir proje almak çoğu zaman yeni bir müşteri kazanmak değil, mevcut bir müşteri ile bağı derinleştirmektir."
+          "heading": "Ölçü: zaman içinde ayakta kalmak",
+          "body": "Akaya Labs 2026'da kuruldu; bu yüzden ürünlerinin yıllar sonraki hâlini henüz gösteremez. Hedef açık: bugün teslim edilen bir ürün üç yıl sonra da sağlıklı çalışsın ve bakımı mümkün olsun. Bugün gösterilebilecek olan, yayındaki ürünler ve onlara gelen güncellemelerdir."
         },
         "partnership": {
-          "heading": "Müşteri portföyü, satış hattı değil",
-          "body": "Standart ajans modeli, yılda en az on yeni müşteri kazanmayı hedefler ve bu hedef satış sürecini ürün geliştirmenin önüne koyar. Akaya Labs için satış hattı değil, müşteri portföyü esastır. Az sayıda müşteri ile derin, çok yıllık ortaklıklar kurmak hem stüdyonun hem müşterinin uzun vadeli faydasına olur. Her teslim ettiğimiz iş, on yıl sonra hâlâ iletişim halinde olabileceğimiz bir müşteri ilişkisinin başlangıcı olarak düşünülür."
+          "heading": "Az müşteri, uzun ilişki",
+          "body": "Akaya Labs satış hedefiyle çalışmaz. Az sayıda müşteriyle, yayından sonra da süren bir çalışma ilişkisi kurmayı amaçlar. Teslim edilen iş, bakım ve değişiklik kanalı açık kalacak biçimde planlanır."
         },
         "discipline": {
           "heading": "Disiplinli büyüme",
-          "body": "Büyümeyi reddetmiyoruz; ancak büyümenin niteliği niceliğinden önce gelir. Yılda fazla iş alarak ekibi büyütmek ortalama maliyeti azaltır, ne yazık ki ortalama kaliteyi de aynı oranda azaltır. Akaya Labs'in seçimi farklıdır: gelen işlerin değerini ve karmaşıklığını büyüterek mesleki olarak büyümek. Bir gün belki bir veya iki nitelikli kollaboratörle çalışmaya başlayabiliriz; ancak bu büyüme departmanlaşma değil, mevcut disipline saygılı bir derinleşme olacaktır."
+          "body": "Büyümeyi reddetmek gibi bir niyet yok; ancak önce işin niteliği gelir. Akaya Labs daha çok iş almak yerine daha değerli ve karmaşık işler alarak büyümeyi seçer. Bir gün bir veya iki nitelikli kollaboratörle çalışmak gündeme gelebilir; bu bir departman kurmak değil, aynı disiplini sürdürmek olur."
         }
       }
     },
@@ -187,7 +238,7 @@
       "sections": {
         "precision": {
           "heading": "Titiz",
-          "body": "Akaya Labs sözleşmelerinde 'kapsama dahildir' veya 'sonradan görüşürüz' tarzı muğlak ifadeler yer almaz. Her engagement, sözleşme imzalanmadan önce yazılı bir kapsam belgesiyle başlar; bu belge ne yapılacağını olduğu kadar ne yapılmayacağını da net biçimde tarif eder. Süreç içinde ortaya çıkan değişiklikler, ek maliyetler ve süre kaymaları yine yazılı olarak hizalanır. Müşteriye sürpriz fatura çıkarmıyoruz; çünkü disipline saygı duyan bir stüdyo olmayı bir pazarlama vaadi değil, kurumsal davranış olarak görüyoruz."
+          "body": "Her iş, sözleşmeden önce yazılı bir kapsam belgesiyle başlar. Belge neyin yapılacağını da yapılmayacağını da açıkça yazar. Süreçte çıkan değişiklik, ek maliyet ve süre kayması yazılı olarak onaylanır. Onaysız fatura kesilmez."
         },
         "speed": {
           "heading": "Hızlı",
@@ -195,25 +246,25 @@
         },
         "premium": {
           "heading": "Premium",
-          "body": "Büyük ajansların mühendislik standartlarını, butik bir stüdyonun sahiplenme disipliniyle birleştiriyoruz. Bu somut bir karar setidir: performans, erişilebilirlik, güvenlik ve sürdürülebilirlik kararları proje başlangıcında alınır; sonradan eklenmeye çalışılan tabakalar değildir. Yazılan kod, ürün canlıya çıktıktan iki yıl sonra okuyacak bir geliştirici için temiz, dokümante ve sürdürülebilir olmalıdır. Premium, bizim için bir pazarlama sıfatı değil, teslim edilen her dosyada gözlenebilen bir mühendislik standardıdır."
+          "body": "Performans, erişilebilirlik ve güvenlik sonradan eklenen katmanlar değildir; projenin başında karara bağlanır. Kod, ürün yayına çıktıktan iki yıl sonra okuyacak bir geliştirici için temiz ve belgeli yazılır. Bunun örnekleri yayındaki ürünlerdir."
         },
         "finished": {
           "heading": "İş bitiren",
-          "body": "Birçok stüdyo ürünü yayına alıp 30 günlük 'destek dönemi' sunar ve sonrasında müşteriyle bağını koparır. Bu model hem ürünün uzun vadeli sağlığı hem müşteri ilişkisi açısından sürdürülebilir değildir. Akaya Labs farklı çalışır: yayın sonrası bakım, ölçeklendirme, yeni özellik geliştirme ve hata düzeltmeleri için iletişim kanalı açık kalır. Müşteri, başlangıç sözleşmesindeki bakım maddeleri veya sürekli hizmet anlaşması çerçevesinde aynı stüdyodan, aynı geliştirici ekibinden yanıt almaya devam eder."
+          "body": "Akaya Labs ürünü yayına alıp ortadan kaybolmaz. Yayın sonrası bakım, ölçeklendirme, yeni özellik ve hata düzeltmeleri için iletişim kanalı açık kalır. Müşteri, bakım maddeleri veya sürekli hizmet anlaşması çerçevesinde yanıtı aynı geliştiriciden alır."
         },
         "discipline": {
           "heading": "Disiplinli",
-          "body": "Bir stüdyonun değerleri, kabul süreci aşamasında uygulanan filtrelerden ibarettir. Akaya Labs için bu filtreler nettir: kullanıcıyı manipüle eden tasarım örüntülerine yer açılmaz; sahte zaman baskıları, kandırıcı ücretsiz/ücretli geçişleri ve gizlenmiş aboneliklerin tasarımına imza atılmaz. Aynı şekilde kumar, bahis ve dolandırıcılık odaklı iş modelleri için yazılım üretmiyoruz. Bu kısıtlar pazarlama metni değil, ilk görüşmede açıkça konuşulan ve gerektiğinde işin kabul edilmemesine yol açan kurumsal disiplindir."
+          "body": "Bir stüdyonun değerleri, hangi işi kabul ettiğinde görünür. Kullanıcıyı manipüle eden tasarım örüntüleri, sahte zaman baskısı, kandırıcı ücretsiz/ücretli geçişler ve gizlenmiş abonelikler tasarlanmaz. Kumar, bahis ve dolandırıcılık odaklı iş modelleri için yazılım üretilmez. Bu sınırlar ilk görüşmede açıkça konuşulur ve gerekirse iş kabul edilmez."
         }
       }
     },
     "overline": "Manifesto",
     "manifesto": {
       "lede": "Disiplinli yazılım. Sözünü tutan teslim.",
-      "p1": "Akaya Labs, müşterilerinin fikirlerini yayına hazır ürünlere dönüştüren bağımsız bir yazılım stüdyosudur. Arayüz tasarımından önyüze, sunucudan mobile, altyapı kurulumundan canlı destek dönemine kadar her katman aynı ekip tarafından planlanır, geliştirilir ve teslim edilir. Bu yapı, geleneksel ajans modellerindeki katmanlar arası bilgi kaybını ortadan kaldırır; müşteri her zaman tek bir muhatap bulur, sorumluluk dağılmaz.",
+      "p1": "Akaya Labs tek kişilik bir yazılım stüdyosudur. Arayüz tasarımı, önyüz, sunucu, mobil, altyapı ve yayın sonrası destek aynı kişinin elindedir. Katmanlar arasında bilgi kaybolmaz, soru sorulacak tek bir muhatap olur. Bunun bedeli de açıktır: aynı anda az iş yürür.",
       "p2": "Yazılım sektöründe iki uçtaki yaklaşıma da mesafeliyiz: 'iki haftada teslim' diye sahaya sürülen yarım ürünlere ve iki yıla yayılarak hiç teslim edilmeyen iddialı projelere. Akaya Labs için doğru hız, sözün tutulduğu hızdır. Söz verilen takvime sadık kalır, gerektiğinde gerekçe ve revize takvim aynı anda iletilir, ek maliyetler fatura kesilmeden önce müşterinin onayına sunulur.",
-      "p3": "Premium ürün, butik ölçek prensibimizdir. Yılda sınırlı sayıda iş alıyoruz; alınan her projenin hak ettiği zamanı, dikkati ve yayın sonrası bakımı görmesi için. Bu seçim kısa vadede gelir hattımızı sınırlasa da uzun vadede portföyümüzün kalitesini, müşterilerimizle kurulan ortaklıkların derinliğini ve teslim edilen ürünlerin uzun ömürlülüğünü doğrudan artırıyor.",
-      "p4": "Dark pattern kullanan, kullanıcıyı manipüle eden tasarım örüntülerine imza atmıyoruz; kumar, bahis ve dolandırıcılığa dayanan iş modelleri için yazılım üretmiyoruz. Bu kısıtlar sözleşmeye eklenen güzel cümleler değil; ilk görüşme aşamasında açıkça konuşulan, gerekirse işin kabul edilmemesine yol açan kurumsal filtrelerdir. Disiplin ve etik, Akaya Labs için pazarlama değil — çalışma şeklinin temelidir."
+      "p3": "Yılda az sayıda iş alınıyor; her proje hak ettiği zamanı, dikkati ve yayın sonrası bakımı görsün diye. Bu seçim geliri sınırlıyor. Karşılığının ne olduğunu zaman gösterecek.",
+      "p4": "Dark pattern kullanan, kullanıcıyı manipüle eden tasarım örüntülerine imza atılmaz; kumar, bahis ve dolandırıcılığa dayanan iş modelleri için yazılım üretilmez. Bu sınırlar ilk görüşmede açıkça konuşulur, gerekirse iş kabul edilmez."
     },
     "story": {
       "overline": "Markanın hikâyesi",
@@ -224,38 +275,38 @@
     },
     "values": {
       "overline": "Değerlerimiz",
-      "title": "Akaya Labs'i Akaya Labs yapan çalışma değerleri.",
+      "title": "Çalışma biçimini belirleyen değerler.",
       "lede": "Marka kimliğinin ötesinde, müşteri ile çalışma sürecimizi şekillendiren üç temel değer.",
       "items": {
         "team": {
-          "title": "Tek ekip, tek sorumluluk",
-          "body": "Klasik bir dijital ajans modelinde tasarımcı ayrı bir şirkette, önyüz farklı bir serbest çalışanda, arka uç bir taşeronda, mobil ise üçüncü bir ekipte olabilir. Bu yapının kaçınılmaz sonucu ekipler arası bilgi kaybıdır: her geçişte bilgi azalır, sorumluluk yayılır ve hatalar 'benim alanım değil' sınırında sahipsiz kalır. Akaya Labs bu modeli tamamen reddeder; tüm katmanlar aynı ekip tarafından geliştirilir. Tasarım dosyasındaki bir karar, koda nasıl yansıyacağını bilen kişi tarafından alınır. Müşteri, sorununu kime ileteceğini her zaman bilir."
+          "title": "Tek kişi, tek sorumluluk",
+          "body": "Tasarım kararını, o kararın koda nasıl yansıyacağını bilen kişi verir, çünkü kodu da aynı kişi yazar. Müşteri sorununu kime ileteceğini bilir. Hastalık veya yoğunluk gibi riskler de bu yapının parçasıdır; bu yüzden takvim yazılı verilir, kaynak kodu ve erişimler belgelenerek müşteriye devredilir."
         },
         "longterm": {
           "title": "Uzun vadeli bakım",
-          "body": "Bir yazılım ürününün gerçek hayatı yayın gününde başlar; teslim sürecinde değil. Akaya Labs, teslim ettiği ürünün canlıya çıktıktan sonraki performansını, bakımını, güvenlik güncellemelerini ve ölçeklendirme ihtiyaçlarını birinci sınıf konular olarak ele alır. Hem sözleşme bazlı bakım anlaşmaları hem sürekli hizmet niteliğindeki uzun vadeli ortaklıklar mevcuttur. Yayın sonrası 'şimdi sıra başka bir müşteride' anlayışıyla uzaklaşmıyoruz; teslim sonrası destek, müşteriyle uzun vadeli ortaklığın temelidir."
+          "body": "Bir yazılım ürününün gerçek hayatı yayın gününde başlar; teslim sürecinde değil. Akaya Labs, teslim ettiği ürünün canlıya çıktıktan sonraki performansını, bakımını, güvenlik güncellemelerini ve ölçeklendirme ihtiyaçlarını birinci sınıf konular olarak ele alır. Yayın sonrası bakım, proje bazlı anlaşmayla veya sürekli hizmet anlaşmasıyla sürdürülebilir."
         },
         "quality": {
-          "title": "Kurumsal kalite, bağımsız stüdyo",
-          "body": "Müşteri Akaya Labs'i seçtiğinde, büyük bir ajansla çalışırken alacağı mühendislik kalitesini ve süreç disiplinini, aynı zamanda küçük bir stüdyonun esnekliği ve sahiplenmesiyle birlikte alır. Kod kalitesi, dokümantasyon, test kapsamı, gözlemlenebilirlik ve güvenlik standartları, projenin büyüklüğüne bakılmaksızın kurumsal seviyede tutulur. Akaya Labs için bağımsız stüdyo olmak daha düşük standartla çalışmak anlamına gelmez; daha kişisel bir hizmet vermek anlamına gelir."
+          "title": "Küçük stüdyo, açık standart",
+          "body": "Performans, erişilebilirlik ve güvenlik kararları projenin başında konuşulur. Arka uçta otomatik test standarttır; istemci tarafı gerçek cihazda elle sınanır. Kod, iki yıl sonra okuyacak başka bir geliştirici düşünülerek yazılır ve mimari kararlar belgelenir."
         }
       }
     },
     "approach": {
       "overline": "Yaklaşımımız",
-      "title": "Müşterilerimizle nasıl çalışıyoruz.",
+      "title": "Müşteri işleri nasıl yürür.",
       "items": {
         "partnership": {
           "title": "Ortak gibi, sağlayıcı değil",
-          "body": "Geleneksel ajans modelinde müşteri, dijital ürünü almak için bir sağlayıcıyla yazışır; sağlayıcı tasarımı bitirir, kodu yazar, fatura keser ve oradan ayrılır. Akaya Labs bu modeli yetersiz bulur. Müşteriye, ürünün uzun vadeli sağlığını da dikkate alan bir teknoloji ortağı gibi yaklaşıyoruz. Kararlar yazışma üzerinden değil, birlikte alınır; mimari seçimler, ölçeklendirme planları, üçüncü parti bağımlılıklar ve uzun vadeli bakım maliyetleri açıkça konuşulur. Riskler ortaya çıktıktan sonra değil, ortaya çıkmadan önce iletilir."
+          "body": "Akaya Labs tasarımı bitirip faturayı kesip ayrılan bir sağlayıcı gibi çalışmaz; ürünün uzun vadeli sağlığını da hesaba katar. Mimari seçimler, üçüncü parti bağımlılıklar ve bakım maliyetleri birlikte konuşulur, sonuç yazıya geçirilir. Riskler ortaya çıktıktan sonra değil, ortaya çıkmadan önce iletilir."
         },
         "scope": {
           "title": "Yazılı kapsam, sürpriz yok",
-          "body": "Her proje, üzerinde uzlaşılmış yazılı bir kapsam belgesi ile başlar. Bu belge teknik gereklilikleri, teslim takvimini, ödeme planını, dahil olan revizyon sayısını ve kapsam dışındaki konuları net biçimde tarif eder. Süreç içinde ortaya çıkan değişiklikler, kapsama eklenmeden önce ek bir yazılı anlaşma ile hizalanır; ek maliyet ve ek süre, fatura kesilmeden önce müşterinin onayına sunulur. 'Sonradan göreceğiz' veya 'şimdi konuşmayalım' yaklaşımı Akaya Labs sözleşmelerinde yer almaz."
+          "body": "Her proje, üzerinde uzlaşılmış yazılı bir kapsam belgesi ile başlar. Bu belge teknik gereklilikleri, teslim takvimini, ödeme planını, dahil olan revizyon sayısını ve kapsam dışındaki konuları net biçimde tarif eder. Süreç içinde ortaya çıkan değişiklikler, kapsama eklenmeden önce yazılı olarak netleştirilir; ek maliyet ve ek süre, fatura kesilmeden önce müşterinin onayına sunulur."
         },
         "communication": {
           "title": "Doğru kanal, hızlı dönüş",
-          "body": "Müşteri iletişimi dağınık bir yapıdan ziyade, sözleşmenin başında belirlenen tek bir resmi kanal üzerinden yürütülür. Bu kanal projeye göre seçilen e-posta, kurumsal mesajlaşma ya da proje yönetim aracıdır ve süreç boyunca değişmeden korunur. Resmi konularda 1–2 iş günü içinde dönüş yapılır; teknik aciliyetler için ayrı bir hızlı kanal tanımlanabilir. Müşteri her zaman aynı kişiyle ve aynı kanalla iletişimde kalır; ekipte rotasyon ya da 'size yeni bir hesap yöneticisi atadık' tarzı süreçler yaşanmaz."
+          "body": "Müşteri iletişimi, işin başında belirlenen tek bir resmi kanal üzerinden yürütülür. Bu kanal projeye göre seçilen e-posta, kurumsal mesajlaşma ya da proje yönetim aracıdır ve süreç boyunca değişmez. Resmi konularda 1–2 iş günü içinde dönüş yapılır; teknik aciliyetler için ayrı bir hızlı kanal tanımlanabilir. Müşteri her zaman aynı kişiyle ve aynı kanalla konuşur."
         },
         "ownership": {
           "title": "Sahiplik müşteride",
@@ -267,19 +318,45 @@
       "overline": "Kurucu",
       "name": "Ahmet Karaca",
       "role": "Kurucu · Yazılım Geliştirici",
-      "bio": "Rize merkezli solo geliştirici. Akaya Labs'in çatısı altındaki tüm ürünleri kendisi tasarlar, kodlar ve yayımlar.",
+      "bio": "Ahmet Karaca, Akaya Labs'in kurucusu ve tek geliştiricisi. Rize'de çalışır. Stüdyonun bütün ürünlerini kendisi tasarlar, kodlar ve yayımlar.",
       "cta_email": "E-posta gönder",
       "cta_linkedin": "LinkedIn",
       "cta_github": "GitHub"
+    },
+    "faq": {
+      "overline": "Kısaca",
+      "items": {
+        "what": {
+          "q": "Akaya Labs nedir?",
+          "a": "Akaya Labs, Ahmet Karaca'nın 2026'da Rize'de kurduğu tek kişilik yazılım stüdyosudur. Kendi uygulamalarını geliştirip yayımlar ve yılda az sayıda müşteri işi alır."
+        },
+        "apps": {
+          "q": "Hangi uygulamaları geliştiriyor?",
+          "a": "Yayındaki ürünleri {names}. Çevre Şikâyet ise bir müşteri için geliştirilip teslim edildi."
+        },
+        "work": {
+          "q": "Hangi işleri alıyor?",
+          "a": "Web siteleri, mobil uygulamalar, web panelleri, macOS ve Windows uygulamaları. Kumar, bahis ve dolandırıcılığa dayanan işler ile kullanıcıyı yanıltan tasarımlar alınmaz."
+        },
+        "size": {
+          "q": "Kaç kişilik?",
+          "a": "Bir. Tasarımı, kodu ve yayını Ahmet Karaca yapar."
+        }
+      }
     }
   },
   "contact": {
     "title": "İletişim",
-    "subtitle": "İş birliği, lisans veya basit bir soru — burası doğru yer.",
-    "field": { "name": "Adınız", "email": "E-posta", "subject": "Konu", "message": "Mesajınız" },
+    "subtitle": "Proje, iş birliği ya da basit bir soru. Burası doğru yer.",
+    "field": {
+      "name": "Adınız",
+      "email": "E-posta",
+      "subject": "Konu",
+      "message": "Mesajınız"
+    },
     "submit": "Gönder",
     "submitting": "Gönderiliyor…",
-    "success": "Mesajınız tarafımıza ulaştı. 1–2 iş günü içerisinde sizinle iletişime geçilecektir.",
+    "success": "Mesajınız ulaştı. 1–2 iş günü içinde yanıt verilecek.",
     "error_generic": "Bir hata oluştu, lütfen tekrar deneyin.",
     "error_rate_limit": "Çok fazla istek. Lütfen biraz sonra tekrar deneyin.",
     "validation": {
@@ -309,7 +386,11 @@
     "address": "Rize, Türkiye",
     "response_time": "1–2 iş günü içinde yanıt",
     "social_label": "Bağlantılar",
-    "copyright": "© 2026 Akaya Labs. Tüm hakları saklıdır."
+    "copyright": "© 2026 Akaya Labs. Tüm hakları saklıdır.",
+    "privacy": "Gizlilik",
+    "est_line": "EST. MMXXVI · RİZE, TR",
+    "hesaplyor_label": "hesaplyor.com: ücretsiz hesaplama araçları",
+    "hesaplyor_href": "https://hesaplyor.com"
   },
   "not_found": {
     "overline": "404",
@@ -318,5 +399,35 @@
     "home": "Ana sayfaya dön",
     "products": "Ürünlere göz at",
     "contact": "Bize yazın"
+  },
+  "privacy": {
+    "title": "Gizlilik",
+    "updated": "Son güncelleme: 30 Ekim 2026",
+    "sections": {
+      "controller": {
+        "heading": "Veri sorumlusu",
+        "body": "Bu site Akaya Labs adına Ahmet Karaca tarafından işletilir (Rize, Türkiye). Bu metin, 6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında bilgilendirme amacı taşır. İletişim: info@akayalabs.com."
+      },
+      "form": {
+        "heading": "İletişim formu",
+        "body": "Formu gönderdiğinizde adınız, e-posta adresiniz, konu ve mesajınız size yanıt vermek için e-posta olarak iletilir. Kötüye kullanımı önlemek için IP adresiniz, gönderim sınırını uygulamak amacıyla kısa süreli işlenir. Mesajlar, talebiniz ve olası yasal yükümlülükler için gerektiği kadar saklanır."
+      },
+      "analytics": {
+        "heading": "Analitik",
+        "body": "Site Google Analytics kullanır. Çerez bandında onay vermediğiniz sürece analitik çerezleri yazılmaz; bu durumda Google'a çerezsiz ve kimliksiz ölçüm sinyalleri gidebilir. Ayrıca Vercel Analytics ve Speed Insights, sayfa görüntüleme ve hız ölçümlerini toplu olarak raporlar. Onayınızı tarayıcı verilerinizi temizleyerek geri alabilirsiniz."
+      },
+      "cookies": {
+        "heading": "Çerezler ve tarayıcı depolaması",
+        "body": "NEXT_LOCALE çerezi dil tercihinizi, tarayıcıda saklanan cookie-consent kaydı çerez tercihinizi hatırlar. Analitik çerezler yalnızca onayınızla yazılır."
+      },
+      "transfer": {
+        "heading": "Hizmet sağlayıcılar",
+        "body": "Barındırma ve analitik için Vercel ve Google, form iletileri için e-posta sağlayıcısı kullanılır. Bu sağlayıcıların sunucuları yurt dışında bulunabilir."
+      },
+      "rights": {
+        "heading": "Haklarınız",
+        "body": "KVKK'nın 11. maddesi uyarınca verilerinizin işlenip işlenmediğini öğrenme, düzeltilmesini veya silinmesini isteme ve işlemeye itiraz etme haklarına sahipsiniz. Başvurularınızı info@akayalabs.com adresine iletebilirsiniz."
+      }
+    }
   }
 }

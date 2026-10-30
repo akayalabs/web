@@ -57,4 +57,8 @@ done
 
 resize_png "$BRAND_SRC/app-icon.png" "$ICON_PX" "$APP_DIR/icon.png"
 resize_png "$BRAND_SRC/app-icon.png" "$APPLE_ICON_PX" "$APP_DIR/apple-icon.png"
+# 4) Paylaşım görseli: OG kartı boyutu değişmez, yalnızca renk paleti sıkıştırılır.
+pngquant --force --quality=80-95 --output "$BRAND/og-default.png" "$BRAND_SRC/og-default.png"
+printf '%-32s %8s -> %8s\n' "og-default.png" "$(size_of "$BRAND_SRC/og-default.png")" "$(size_of "$BRAND/og-default.png")"
+
 resize_png "$BRAND/logo-mark.png" "$((FAVICON_CANVAS * FAVICON_SCALE))" "$BRAND/logo-mark-$((FAVICON_CANVAS * FAVICON_SCALE)).png"

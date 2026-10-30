@@ -4,11 +4,13 @@ import { useEffect, useRef, useState } from "react";
 import { motion, useInView, useMotionValue, useTransform, animate } from "motion/react";
 import { liveProducts, platformCount } from "@/lib/products";
 
+const FOUNDED_YEAR = 2026;
+
 const STATS = [
-  { value: liveProducts.length, suffix: "", label_tr: "yayında ürün", label_en: "shipped products" },
-  { value: 9, suffix: "", label_tr: "destekli dil", label_en: "supported languages" },
+  { value: liveProducts.length, suffix: "", label_tr: "yayında ürün", label_en: "live products" },
   { value: platformCount, suffix: "", label_tr: "platform", label_en: "platforms" },
-  { value: 100, suffix: "%", label_tr: "tek elden", label_en: "single-team" },
+  { value: 1, suffix: "", label_tr: "geliştirici", label_en: "developer" },
+  { value: FOUNDED_YEAR, suffix: "", label_tr: "kuruluş", label_en: "founded" },
 ] as const;
 
 function CountUp({ to, suffix }: { to: number; suffix: string }) {
@@ -16,7 +18,8 @@ function CountUp({ to, suffix }: { to: number; suffix: string }) {
   const inView = useInView(ref, { once: true, margin: "0px 0px -20% 0px" });
   const mv = useMotionValue(0);
   const rounded = useTransform(mv, (v) => Math.round(v).toString());
-  const [text, setText] = useState("0");
+  // Sunucu HTML'i gerçek değeri taşır; JavaScript çalıştırmayan okur sıfır görmez.
+  const [text, setText] = useState(String(to));
 
   useEffect(() => {
     if (!inView) return;

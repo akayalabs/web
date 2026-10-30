@@ -1,6 +1,15 @@
 export type ProductStatus = "live" | "review" | "in_dev" | "client";
 
-export type Platform = "ios" | "android" | "macos" | "web";
+export type Platform = "ios" | "android" | "macos" | "windows" | "web";
+
+// Dile göre değişmeyen özel adlar; kartlarda ve JSON-LD'de aynı kaynaktan okunur.
+export const PLATFORM_LABEL: Record<Platform, string> = {
+  ios: "iOS",
+  android: "Android",
+  macos: "macOS",
+  windows: "Windows",
+  web: "Web",
+};
 
 // schema.org SoftwareApplication.applicationCategory değerleri.
 export type AppCategory =
@@ -9,6 +18,7 @@ export type AppCategory =
   | "EducationalApplication"
   | "BusinessApplication"
   | "GameApplication"
+  | "HealthApplication"
   | "LifestyleApplication";
 
 export type Product = {
@@ -17,11 +27,13 @@ export type Product = {
     | "stoneye"
     | "bytebye"
     | "cleandev"
+    | "patchkit"
     | "pulsewatch"
     | "snapslim"
     | "cleanlock"
     | "hesaplyor"
     | "away-kingdom"
+    | "kinetude"
     | "cevre-sikayet";
   status: ProductStatus;
   // Ürünün kendi sitesi; yoksa mağaza sayfası.
@@ -39,7 +51,7 @@ export const products: readonly Product[] = [
     status: "live",
     url: "https://coredence.com",
     appStoreUrl: null,
-    platforms: ["macos"],
+    platforms: ["macos", "windows"],
     category: "DeveloperApplication",
   },
   {
@@ -67,11 +79,19 @@ export const products: readonly Product[] = [
     category: "DeveloperApplication",
   },
   {
+    slug: "patchkit",
+    status: "live",
+    url: "https://patchkit.app",
+    appStoreUrl: appStore("patchkit", "6760600346"),
+    platforms: ["web", "ios"],
+    category: "BusinessApplication",
+  },
+  {
     slug: "pulsewatch",
     status: "live",
     url: "https://pulsewatch.watch",
-    appStoreUrl: null,
-    platforms: ["web"],
+    appStoreUrl: appStore("pulsewatch-web-monitor", "6759724594"),
+    platforms: ["web", "ios"],
     category: "BusinessApplication",
   },
   {
@@ -105,6 +125,15 @@ export const products: readonly Product[] = [
     appStoreUrl: appStore("away-kingdom", "6790325775"),
     platforms: ["ios"],
     category: "GameApplication",
+  },
+  {
+    // Mağaza sayfası açılana kadar yayında sayılmaz; açılınca status ve appStoreUrl güncellenir.
+    slug: "kinetude",
+    status: "in_dev",
+    url: "https://kinetude.com",
+    appStoreUrl: null,
+    platforms: ["ios"],
+    category: "HealthApplication",
   },
   {
     slug: "cevre-sikayet",

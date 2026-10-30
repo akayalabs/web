@@ -1,6 +1,7 @@
-import { setRequestLocale } from "next-intl/server";
+import { getMessages, setRequestLocale } from "next-intl/server";
+import { NextIntlClientProvider } from "next-intl";
 import { useTranslations } from "next-intl";
-import { buildMetadata, BreadcrumbSchema } from "@/lib/seo";
+import { buildMetadata, BreadcrumbSchema, liveProductNames } from "@/lib/seo";
 import { Manifesto } from "@/components/manifesto";
 import { BrandStory } from "@/components/brand-story";
 import { Founder } from "@/components/founder";
@@ -19,15 +20,22 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const { about, closing, products, a11y } = await getMessages();
+  const names = await liveProductNames(locale);
   return (
     <>
       <BreadcrumbSchema locale={locale} trail={[{ pathname: "/about", titleKey: "about.title" }]} />
-      <AboutBody />
+      {/* about metni uzun; yalnızca bu sayfanın istemci bileşenlerine gönderilir. */}
+      <NextIntlClientProvider messages={{ about, closing, products, a11y }}>
+        <AboutBody names={names} />
+      </NextIntlClientProvider>
     </>
   );
 }
 
-function AboutBody() {
+const FAQ_KEYS = ["what", "apps", "work", "size"] as const;
+
+function AboutBody({ names }: { names: string }) {
   const t = useTranslations("about");
   return (
     <>
@@ -40,6 +48,17 @@ function AboutBody() {
             className="mt-4 font-display text-5xl tracking-tight sm:text-6xl lg:text-7xl"
           />
           <p className="mt-8 max-w-2xl text-lg leading-relaxed text-sumi-soft">{t("intro")}</p>
+          <section className="mt-16 max-w-3xl">
+            <span className="overline">{t("faq.overline")}</span>
+            <dl className="mt-6 flex flex-col gap-7">
+              {FAQ_KEYS.map((k) => (
+                <div key={k}>
+                  <dt className="font-display text-xl text-sumi">{t(`faq.items.${k}.q`)}</dt>
+                  <dd className="mt-2 leading-relaxed text-sumi-soft">{t(`faq.items.${k}.a`, { names })}</dd>
+                </div>
+              ))}
+            </dl>
+          </section>
           <ValuesBand />
           <VisionMission />
           <SceneCurtain as="div" className="mt-16">

@@ -13,19 +13,17 @@ export function Nav() {
       <div className="mx-auto flex max-w-[1800px] items-center justify-between gap-4">
         <Link href="/" className="group flex shrink-0 items-center gap-3" aria-label="Akaya Labs">
           <Image
-            src="/brand/logo-mark.png"
+            src="/brand/logo-mark-128.png"
             alt={ta("logo_mark")}
             width={40}
             height={40}
-            loading="eager"
             className="h-9 w-9 shrink-0 opacity-90 transition group-hover:opacity-100 sm:h-10 sm:w-10"
           />
           <Image
             src="/brand/wordmark-tech.png"
             alt={ta("wordmark")}
-            width={1600}
-            height={1600}
-            loading="eager"
+            width={220}
+            height={220}
             sizes="110px"
             className="h-auto w-[92px] shrink-0 object-contain sm:w-[110px]"
           />

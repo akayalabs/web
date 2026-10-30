@@ -75,7 +75,7 @@ test("mobile menu opens, exposes every nav link and closes", async ({ page }) =>
   const panel = page.getByRole("dialog", { name: "Mobil menü" });
   await expect(panel).toBeVisible();
   await expect(panel.getByRole("link", { name: "Ürünler" })).toBeVisible();
-  await expect(panel.getByRole("link", { name: "Kurumsal" })).toBeVisible();
+  await expect(panel.getByRole("link", { name: "Hakkında" })).toBeVisible();
   await expect(panel.getByRole("button", { name: "English" })).toBeVisible();
 
   await page.keyboard.press("Escape");

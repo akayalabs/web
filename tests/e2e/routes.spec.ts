@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 
-const ROUTES = ["", "/products", "/about", "/contact"];
+const ROUTES = ["", "/products", "/about", "/about/vision", "/about/mission", "/contact", "/privacy"];
 const LOCALES = ["tr", "en"];
 
 for (const locale of LOCALES) {

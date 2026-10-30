@@ -5,6 +5,8 @@ export const routing = defineRouting({
   locales: ["tr", "en"],
   defaultLocale: "tr",
   localePrefix: "always",
+  // hreflang metadata'dan gelir; middleware'in Link başlığı farklı bir x-default bildiriyordu.
+  alternateLinks: false,
 });
 
 export const { Link, redirect, usePathname, useRouter, getPathname } =

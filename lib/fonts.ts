@@ -12,6 +12,7 @@ export const playfair = localFont({
   variable: "--font-display-loaded",
   display: "swap",
   weight: "400 900",
+  preload: false,
 });
 
 export const mincho = localFont({
@@ -19,4 +20,5 @@ export const mincho = localFont({
   variable: "--font-mincho-loaded",
   display: "swap",
   weight: "400",
+  preload: false,
 });

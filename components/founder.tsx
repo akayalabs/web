@@ -1,4 +1,3 @@
-// TODO(karaca): verify LinkedIn + GitHub handles before launch (GitHub hesabı yeni açılacak)
 import { useTranslations } from "next-intl";
 import { BrushDivider } from "./ornaments/brush-divider";
 import { HankoStamp } from "./ornaments/hanko-stamp";
@@ -20,7 +19,7 @@ export function Founder() {
       <div className="mt-7 flex flex-wrap gap-6 text-sm">
         <a href="mailto:info@akayalabs.com" className="underline decoration-brass underline-offset-4 hover:decoration-brass-deep">{t("cta_email")}</a>
         <a href="https://www.linkedin.com/in/ahmet-karaca-a585b4408" target="_blank" rel="noreferrer" className="underline decoration-brass underline-offset-4 hover:decoration-brass-deep">{t("cta_linkedin")}</a>
-        <a href="https://github.com/karacaahmet" target="_blank" rel="noreferrer" className="underline decoration-brass underline-offset-4 hover:decoration-brass-deep">{t("cta_github")}</a>
+        <a href="https://github.com/akayalabs" target="_blank" rel="noreferrer" className="underline decoration-brass underline-offset-4 hover:decoration-brass-deep">{t("cta_github")}</a>
       </div>
     </ScrollReveal>
   );
